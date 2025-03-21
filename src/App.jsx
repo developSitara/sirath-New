@@ -1,0 +1,37 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useEffect, useState, Suspense } from "react";
+import ProductDetail from "./Pages/ProductDetail/ProductDetail";
+import Products from "./Pages/ProductCategory/ProductCategory";
+import Home from "./Components/Home/Home";
+import Footer from './Components/Footer/Footer'
+import Navbar from './Components/Navbar/Navbar'
+import ProductCategory from "./Pages/ProductCategory/ProductCategory";
+import Shop from "./Pages/Shop/Shop";
+import AddToCart from "./Pages/AddToCart/AddToCart";
+// const Home = React.lazy(() => import("./Components/Home/Home"));
+// const Navbar = React.lazy(() => import("./Components/Navbar/Navbar"));
+// const Footer = React.lazy(() => import("./Components/Footer/Footer"));
+
+function App() {
+
+
+  return (
+    <BrowserRouter>
+      {/* Wrap Navbar, Routes, and Footer with Suspense for lazy loading */}
+      {/* <Suspense fallback={<div>Loading...</div>}> */}
+        <Navbar  />
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/product" element={<Products />} />
+          <Route path="/product-detail/:productId" element={<ProductDetail />} />
+          <Route path="/category/:cat" element={<ProductCategory />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<AddToCart />} />
+        </Routes>
+        <Footer />
+      {/* </Suspense> */}
+    </BrowserRouter>
+  );
+}
+
+export default App;

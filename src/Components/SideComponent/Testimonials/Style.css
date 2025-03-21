@@ -1,0 +1,22 @@
+/* Default dots - White but Transparent */
+.slick-dots li button:before {
+    color: white !important; /* White dots */
+    opacity: 0.5 !important; /* Lower opacity for inactive dots */
+    font-size: 10px !important; /* Keep all dots same size */
+    transition: all 0.4s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Active dot - White background with glowing effect */
+  .slick-dots li.slick-active button:before {
+    color: white !important; /* Keep it white */
+    opacity: 1 !important; /* Fully visible */
+    font-size: 10px !important; /* Ensure same size */
+    background: white !important; /* Solid white background */
+    border-radius: 50%; /* Round shape */
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
