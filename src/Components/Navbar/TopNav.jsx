@@ -3,7 +3,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 const TopNav = () => {
   return (
     <>
-      <div className=" bg-white py-3 px-4 sm:px-10 md:px-12 lg:px-16 xl:px-20 w-full ">
+      <div className=" bg-white py-3 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full ">
         <div className="w-full flex gap-2 items-center">
           <TbTruckDelivery size={20}/>
           <p className="font-Poppins font-semibold text-xs xl:text-sm">

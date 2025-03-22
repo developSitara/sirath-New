@@ -54,7 +54,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="mt-10 py-5 px-4 bg-blue text-white">
+    <div className="mt-10 py-5 px-10 bg-blue text-white">
       <h3 className="text-center capitalize w-full mb-3 font-Poppins font-semibold text-lg">
         our testimonials
       </h3>

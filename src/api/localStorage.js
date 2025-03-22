@@ -3,12 +3,13 @@ const addToCart = (singlePro) => {
     try {
       let allData = JSON.parse(localStorage.getItem("product"));
       if (!allData || allData.length == 0) {
-        let myData = [singlePro];
+  
+        let myData = [{...singlePro,qty:1}];
         localStorage.setItem("product", JSON.stringify(myData));
         alert("Added to cart");
         resolve("Success");
       } else {
-        allData.push(singlePro);
+        allData.push({...singlePro,qty:1});
         localStorage.setItem("product", JSON.stringify(allData));
         alert("Added to cart");
         resolve("Success");

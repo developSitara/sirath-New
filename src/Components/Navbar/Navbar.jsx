@@ -10,11 +10,11 @@ import {
 } from "react-icons/fa6";
 import { FiYoutube } from "react-icons/fi";
 import { RiPinterestLine } from "react-icons/ri";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { CiMenuFries } from "react-icons/ci";
 
-const Navbar = ({ cart}) => {
+const Navbar = ({ cart }) => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -27,16 +27,18 @@ const Navbar = ({ cart}) => {
   return (
     <>
       <TopNav />
-      <LogoNav cart={ cart } />
+      <LogoNav cart={cart} />
 
       {/* Sticky Navbar */}
       <div
-        className={`sticky top-0 z-20 bg-blue py-6 px-4 sm:px-10 md:px-12 lg:px-16 xl:px-20 w-full flex items-center justify-between shadow-md transition-all duration-300`}
+        className={`sticky top-0 z-20 bg-blue py-6 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full flex items-center justify-between shadow-md transition-all duration-300`}
       >
         {/* Show Logo Only When Sticky */}
         {isSticky && (
           <div className="hidden xl:flex items-center gap-3">
-            <img src={logo} alt="Logo" className="h-10 w-auto bg-white" />
+            <Link to={"/"}>
+              <img src={logo} alt="Logo" className="h-10 w-auto bg-white" />
+            </Link>
           </div>
         )}
 

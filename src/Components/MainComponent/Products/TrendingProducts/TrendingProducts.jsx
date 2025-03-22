@@ -116,7 +116,7 @@ const TrendingProducts = () => {
         >
           {filteredProducts.length > 0 ? (
             filteredProducts.map((item) => (
-              <div className="mb-6" key={item.id}>
+              <div className="mb-6 px-2" key={item.id}>
                 {/* <Link to={`/product-detail/${item.id}`}> */}
                   <ProductCard
                     key={item.id}

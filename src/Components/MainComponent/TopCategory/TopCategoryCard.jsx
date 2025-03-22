@@ -9,7 +9,7 @@ const TopCategoryCard = ({ img, productName }) => {
 
   }
   return (
-    <div onClick={()=>getCatgeoryName(productName)} className="p-2 sm:w-40 sm:h-36  md:w-40 md:h-48 flex flex-col items-center text-center group hover:bg-[#fff] rounded-lg transition-all duration-300 ease-in-out">
+    <div onClick={()=>getCatgeoryName(productName)} className="cursor-pointer p-2 sm:w-40 sm:h-36  md:w-40 md:h-48 flex flex-col items-center text-center group hover:bg-[#fff] rounded-lg transition-all duration-300 ease-in-out">
       {/* Image with Fixed Size */}
       <div className="bg-[#fff]  w-full h-auto sm:w-36 sm:h-36 md:w-40 md:h-40 flex justify-center items-center overflow-hidden  ">
         <img

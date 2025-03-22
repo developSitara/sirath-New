@@ -3,7 +3,7 @@ import { FaCalendar } from "react-icons/fa";
 
 const BlogCard = ({ key,img, name, des, date }) => {
   return (
-    <div key={key} className=" bg-white shadow-md hover:shadow-xl transition-shadow flex justify-center w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl rounded-lg overflow-hidden">
+    <div key={key} className=" bg-white shadow-md hover:shadow-xl transition-shadow flex justify-center w-full rounded-lg overflow-hidden">
       <div className="w-full pb-5 flex flex-col items-center text-center">
         {/* Image */}
         <div className="w-full">

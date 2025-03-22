@@ -3,46 +3,70 @@ import blackWire from "../assets/Products/TrendingProduct/black_wire.png";
 import cable_1 from "../assets/Products/TrendingProduct/cable_1.png";
 import cable_2 from "../assets/Products/TrendingProduct/cable_3.png";
 import cable_3 from "../assets/Products/TrendingProduct/cable_4.png";
-import cable_4 from "../assets/Products/TrendingProduct/cable.png";
 import cable_5 from "../assets/Products/TrendingProduct/cutout.png";
-import cable_6 from "../assets/Products/TrendingProduct/wire_1.png";
 import cable_7 from "../assets/Products/TrendingProduct/wire_3.png";
-import cable_8 from "../assets/Products/TrendingProduct/wire_5.png";
-import box_1 from "../assets/Products/CategoryProduct/Mask group (7).png";
-import box_2 from "../assets/Products/CategoryProduct/Mask group (12).png";
-import box_3 from "../assets/Products/CategoryProduct/box_2.png";
-import box_4 from "../assets/Products/CategoryProduct/box_3.png";
-import box_5 from "../assets/Products/CategoryProduct/box_4.png";
+// import box_1 from "../assets/Products/CategoryProduct/Mask group (7).png";
+// import box_2 from "../assets/Products/CategoryProduct/Mask group (12).png";
+// import box_3 from "../assets/Products/CategoryProduct/box_2.png";
+// import box_4 from "../assets/Products/CategoryProduct/box_3.png";
+// import box_5 from "../assets/Products/CategoryProduct/box_4.png";
 import box_6 from "../assets/Products/CategoryProduct/box_8 (1).png";
 import box_7 from "../assets/Products/CategoryProduct/box_8.png";
 import box_8 from "../assets/Products/CategoryProduct/box_9.png";
 import user from "../assets/Products/women.png";
 import reviewImg1 from "../assets/Products/NewImgs/fuse_1.png";
 import reviewImg2 from "../assets/Products/NewImgs/fuse_2.png";
-import wire_1 from "../assets/Products/SpecificProduct/wire_1.png";
-import wire_2 from "../assets/Products/SpecificProduct/wire_2.png";
-import wire_3 from "../assets/Products/SpecificProduct/wire_3.png";
-import wire_4 from "../assets/Products/SpecificProduct/wire_4.png";
-import wire_5 from "../assets/Products/SpecificProduct/wire_5.png";
-import wire_6 from "../assets/Products/SpecificProduct/wire_6.png";
-import wire_7 from "../assets/Products/SpecificProduct/wire_7.png";
-import wire_8 from "../assets/Products/SpecificProduct/wire_9.png";
-import wire_9 from "../assets/Products/SpecificProduct/wire_10.png";
+// import wire_2 from "../assets/Products/SpecificProduct/wire_2.png";
+// import wire_3 from "../assets/Products/SpecificProduct/wire_3.png";
+// import wire_5 from "../assets/Products/SpecificProduct/wire_5.png";
 import wire_10 from "../assets/Products/SpecificProduct/wire_11.png";
 import wire_11 from "../assets/Products/SpecificProduct/wire_12.png";
 import wire_12 from "../assets/Products/SpecificProduct/wire_13.png";
 import wire_13 from "../assets/Products/SpecificProduct/wire_14.png";
-import wire_14 from "../assets/Products/SpecificProduct/wire_15.png";
-import wire_15 from "../assets/Products/SpecificProduct/wire_16.png";
-import wire_16 from "../assets/Products/SpecificProduct/wire_17.png";
-import wire_17 from "../assets/Products/SpecificProduct/wire_18.png";
-import wire_18 from "../assets/Products/SpecificProduct/wire_19.png";
 import wire_19 from "../assets/Products/SpecificProduct/wire_20.png";
+
+import transformer_1 from "../assets/Products/TransformerImg/transformer_1.png";
+import transformer_2 from "../assets/Products/TransformerImg/transformer_3.png";
+import transformer_3 from "../assets/Products/TransformerImg/transformer_4.png";
+import transformer_4 from "../assets/Products/TransformerImg/transformer_5.png";
+import transformer_5 from "../assets/Products/TransformerImg/transformer_6.png";
+
+import hornup_fuse_1 from "../assets/Products/SwitchImg/hornup_fuse_2.png";
+import hornup_fuse_2 from "../assets/Products/SwitchImg/hornup_fuse_3.png";
+import hornup_fuse_3 from "../assets/Products/SwitchImg/hornup_fuse_5.png";
+import hornup_fuse_4 from "../assets/Products/SwitchImg/hornup_fuse_6.png";
+import hornup_fuse_5 from "../assets/Products/SwitchImg/hornup_fuse_10.png";
+
+import wire_1 from "../assets/Products/CableImg/wire_2 (1).png";
+import wire_2 from "../assets/Products/CableImg/wire_4 (1).png";
+import wire_3 from "../assets/Products/CableImg/wire_19.png";
+import wire_4 from "../assets/Products/CableImg/wire_9.png";
+import wire_5 from "../assets/Products/CableImg/cat_1.png";
+import wire_6 from "../assets/Products/CableImg/wire_3 (1).png";
+
+import box_1 from "../assets/Products/BoxImg/box_3 (1).png";
+import box_2 from "../assets/Products/BoxImg/box_3.png";
+import box_3 from "../assets/Products/BoxImg/box_4 (1).png";
+import box_4 from "../assets/Products/BoxImg/box_4.png";
+import box_5 from "../assets/Products/BoxImg/box_7.png";
+
+import earthingSwitch_1 from "../assets/Products/EarthingImg/earthingSwitch__4.png";
+import earthingSwitch_2 from "../assets/Products/EarthingImg/earthingSwitch_2.png";
+import earthingSwitch_3 from "../assets/Products/EarthingImg/earthingSwitch_3.png";
+import earthingSwitch_4 from "../assets/Products/EarthingImg/earthingSwitch_5.png";
+import earthingSwitch_5 from "../assets/Products/EarthingImg/earthingSwitch_6.png";
+
+import dropout_1 from "../assets/Products/DropImg/dropout_1.png";
+import dropout_2 from "../assets/Products/DropImg/dropout_2.png";
+import dropout_3 from "../assets/Products/DropImg/dropout_3.png";
+import dropout_4 from "../assets/Products/DropImg/dropout_6.png";
+import dropout_5 from "../assets/Products/DropImg/dropout_7.png";
+
 
 const products = [
   {
     id: uuidv4(),
-    img: [blackWire, cable_1, cable_2, cable_3],
+    img: [wire_6, cable_1, cable_2, cable_3],
     productName: "High-Quality Wire",
     qty:2,
     description:
@@ -52,10 +76,10 @@ const products = [
     tagOff: "",
     category: "wire & cable",
     trendingCat: "Featured Product",
-    totalRating: 4,
+    totalRating: 1,
     review: [
       {
-        rating: 4.5,
+        rating: 1.5,
         userImg: user,
         userName: "Aria McKnight",
         profession: "Tech Enthusiast",
@@ -83,7 +107,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_1, cable_1, cable_2, cable_3],
+    img: [wire_2, wire_2, wire_3, wire_4],
     productName: "High Bolt Wire",
     qty:5,
     description:
@@ -93,10 +117,10 @@ const products = [
     tagOff: "",
     category: "wire & cable",
     trendingCat: "Featured Product",
-    totalRating: 3.7,
+    totalRating: 3,
     review: [
       {
-        rating: 4.5,
+        rating: 5,
         userImg: user,
         userName: "Aria McKnight",
         profession: "Tech Enthusiast",
@@ -124,17 +148,58 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [cable_7, cable_1, cable_2, cable_3],
+    img: [wire_3, wire_4, wire_5, wire_2],
     productName: "Ac Machine Wire",
     qty:10,
     description:
       "Durable and high-conductivity wire designed for maximum efficiency.",
-    price: 900,
+    price: 400,
     deletePrice: 1500,
     tagOff: "",
     category: "wire & cable",
     trendingCat: "Featured Product",
-    totalRating: 2.7,
+    totalRating: 2.9,
+    review: [
+      {
+        rating: 3.5,
+        userImg: user,
+        userName: "Aria McKnight",
+        profession: "Tech Enthusiast",
+        comment:
+          "This wire is incredibly durable and works flawlessly. Highly recommend!",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.0,
+        userImg: user,
+        userName: "John Doe",
+        profession: "Engineer",
+        comment: "Good product, but could be a little more flexible.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Sophie Williams",
+        profession: "Designer",
+        comment: "Perfect for my design needs! The quality is amazing.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [wire_4, wire_1, wire_2, wire_2],
+    productName: "Ac Machine Wire",
+    qty:10,
+    description:
+      "Durable and high-conductivity wire designed for maximum efficiency.",
+    price: 100,
+    deletePrice: 1500,
+    tagOff: "",
+    category: "wire & cable",
+    trendingCat: "Featured Product",
+    totalRating: 3.2,
     review: [
       {
         rating: 4.5,
@@ -165,17 +230,99 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_8, cable_1, cable_2, cable_3],
-    productName: "Box",
+    img: [wire_5, wire_4, wire_1, wire_2],
+    productName: "Ac Machine Wire",
+    qty:10,
+    description:
+      "Durable and high-conductivity wire designed for maximum efficiency.",
+    price: 400,
+    deletePrice: 1500,
+    tagOff: "",
+    category: "wire & cable",
+    trendingCat: "Featured Product",
+    totalRating: 2,
+    review: [
+      {
+        rating: 5,
+        userImg: user,
+        userName: "Aria McKnight",
+        profession: "Tech Enthusiast",
+        comment:
+          "This wire is incredibly durable and works flawlessly. Highly recommend!",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.0,
+        userImg: user,
+        userName: "John Doe",
+        profession: "Engineer",
+        comment: "Good product, but could be a little more flexible.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Sophie Williams",
+        profession: "Designer",
+        comment: "Perfect for my design needs! The quality is amazing.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [blackWire, wire_4, wire_1, wire_2],
+    productName: "Black wire",
+    qty:6,
+    description:
+      "Durable and high-conductivity wire designed for maximum efficiency.",
+    price: 200,
+    deletePrice: 500,
+    tagOff: "",
+    category: "wire & cable",
+    trendingCat: "Featured Product",
+    totalRating: 2,
+    review: [
+      {
+        rating: 2.5,
+        userImg: user,
+        userName: "Aria McKnight",
+        profession: "Tech Enthusiast",
+        comment:
+          "This wire is incredibly durable and works flawlessly. Highly recommend!",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.0,
+        userImg: user,
+        userName: "John Doe",
+        profession: "Engineer",
+        comment: "Good product, but could be a little more flexible.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Sophie Williams",
+        profession: "Designer",
+        comment: "Perfect for my design needs! The quality is amazing.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [transformer_1, transformer_2, transformer_4, transformer_5],
+    productName: "Tranformer box1",
     qty:1,
     description:
       "Versatile, long-lasting cable suitable for various applications.",
-    price: 800,
+    price: 1000,
     deletePrice: 200,
-    tagOff: "30% Off",
+    tagOff: "",
     category: "Transformer",
     trendingCat: "new product",
-    totalRating: 4.1,
+    totalRating: 2.9,
     review: [
       {
         rating: 4,
@@ -205,17 +352,17 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_7, cable_1, cable_2, cable_3],
+    img: [transformer_2, transformer_1, transformer_3, transformer_4],
     productName: "Transformer box",
     qty:12,
     description:
       "Versatile, long-lasting cable suitable for various applications.",
-    price: 1800,
+    price: 1300,
     deletePrice: 1200,
-    tagOff: "30% Off",
+    tagOff: "",
     category: "Transformer",
     trendingCat: "new product",
-    totalRating: 4.5,
+    totalRating: 0.1,
     review: [
       {
         rating: 4.0,
@@ -245,17 +392,137 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_1, cable_1, cable_2, cable_3],
+    img: [transformer_3, transformer_2, transformer_1, transformer_4],
+    productName: "Transformer box3",
+    qty:12,
+    description:
+      "Versatile, long-lasting cable suitable for various applications.",
+    price: 1800,
+    deletePrice: 1200,
+    tagOff: "",
+    category: "Transformer",
+    trendingCat: "new product",
+    totalRating: 3.9,
+    review: [
+      {
+        rating: 4.0,
+        userImg: user,
+        userName: "Elena Roberts",
+        profession: "Artist",
+        comment: "Great cable, does the job well! No complaints so far.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 3.5,
+        userImg: user,
+        userName: "Zara Lee",
+        profession: "Software Developer",
+        comment: "Good quality but a bit stiff. Could be improved.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.8,
+        userImg: user,
+        userName: "Victor King",
+        profession: "Business Owner",
+        comment: "This cable exceeded my expectations. Super reliable!",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [transformer_4, transformer_1, transformer_3, transformer_5],
+    productName: "Transformer box4",
+    qty:12,
+    description:
+      "Versatile, long-lasting cable suitable for various applications.",
+    price: 1900,
+    deletePrice: 1200,
+    tagOff: "",
+    category: "Transformer",
+    trendingCat: "new product",
+    totalRating: 1,
+    review: [
+      {
+        rating: 4.0,
+        userImg: user,
+        userName: "Elena Roberts",
+        profession: "Artist",
+        comment: "Great cable, does the job well! No complaints so far.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 3.5,
+        userImg: user,
+        userName: "Zara Lee",
+        profession: "Software Developer",
+        comment: "Good quality but a bit stiff. Could be improved.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.8,
+        userImg: user,
+        userName: "Victor King",
+        profession: "Business Owner",
+        comment: "This cable exceeded my expectations. Super reliable!",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [transformer_5, transformer_1, transformer_2, transformer_4],
+    productName: "Transformer box5",
+    qty:12,
+    description:
+      "Versatile, long-lasting cable suitable for various applications.",
+    price: 890,
+    deletePrice: 1200,
+    tagOff: "New",
+    category: "Transformer",
+    trendingCat: "new product",
+    totalRating: 3.5,
+    review: [
+      {
+        rating: 4.0,
+        userImg: user,
+        userName: "Elena Roberts",
+        profession: "Artist",
+        comment: "Great cable, does the job well! No complaints so far.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 3.5,
+        userImg: user,
+        userName: "Zara Lee",
+        profession: "Software Developer",
+        comment: "Good quality but a bit stiff. Could be improved.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.8,
+        userImg: user,
+        userName: "Victor King",
+        profession: "Business Owner",
+        comment: "This cable exceeded my expectations. Super reliable!",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [box_1, box_2, box_3, box_4],
     productName: "Distribution Wire box",
     qty:9,
     description:
       "A wire that combines flexibility and strength for multiple uses.",
     price: 500,
     deletePrice: 1300,
-    tagOff: "New",
+    tagOff: "30% Off",
     category: "Distribution box",
     trendingCat: "Best Seller",
-    totalRating: 3.9,
+    totalRating: 3.2,
     review: [
       {
         rating: 4.5,
@@ -286,7 +553,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_2, cable_1, cable_2, cable_3],
+    img: [box_2, box_3, box_4, box_5],
     productName: "Box Wire",
     qty:7,
     description:
@@ -296,7 +563,7 @@ const products = [
     tagOff: "New",
     category: "Distribution box",
     trendingCat: "Best Seller",
-    totalRating: 4.9,
+    totalRating: 4.2,
     review: [
       {
         rating: 4.5,
@@ -327,8 +594,90 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_3, cable_1, cable_2, cable_3],
-    productName: "Box flexibility Wire",
+    img: [box_3, box_4, box_5, box_1],
+    productName: "Distribution box 3",
+    qty:12,
+    description:
+      "A wire that combines flexibility and strength for multiple uses.",
+    price: 500,
+    deletePrice: 1300,
+    tagOff: "30% Off",
+    category: "Distribution box",
+    trendingCat: "Best Seller",
+    totalRating: 4.2,
+    review: [
+      {
+        rating: 4.5,
+        userImg: user,
+        userName: "Liam Scott",
+        profession: "Electrician",
+        comment: "Very flexible and easy to work with. Works perfectly.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Emma Brown",
+        profession: "Freelancer",
+        comment:
+          "Solid product with good flexibility, but could use better insulation.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Mia Davis",
+        profession: "Teacher",
+        comment: "I love how versatile this wire is! It works for everything.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [box_4, box_2, box_5, box_1],
+    productName: "Distribution box4",
+    qty:12,
+    description:
+      "A wire that combines flexibility and strength for multiple uses.",
+    price: 1500,
+    deletePrice: 1300,
+    tagOff: "",
+    category: "Distribution box",
+    trendingCat: "Best Seller",
+    totalRating: 4.1,
+    review: [
+      {
+        rating: 4.5,
+        userImg: user,
+        userName: "Liam Scott",
+        profession: "Electrician",
+        comment: "Very flexible and easy to work with. Works perfectly.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Emma Brown",
+        profession: "Freelancer",
+        comment:
+          "Solid product with good flexibility, but could use better insulation.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Mia Davis",
+        profession: "Teacher",
+        comment: "I love how versatile this wire is! It works for everything.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [box_5, box_4, box_3, box_1],
+    productName: "Distribution box5",
     qty:12,
     description:
       "A wire that combines flexibility and strength for multiple uses.",
@@ -337,7 +686,7 @@ const products = [
     tagOff: "New",
     category: "Distribution box",
     trendingCat: "Best Seller",
-    totalRating: 4.9,
+    totalRating: 3.4,
     review: [
       {
         rating: 4.5,
@@ -368,7 +717,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_4, cable_1, cable_2, cable_3],
+    img: [box_1, box_1, box_2, box_3],
     productName: " Box Machine",
     qty:2,
     description:
@@ -378,7 +727,7 @@ const products = [
     tagOff: "New",
     category: "Box",
     trendingCat: "Best Seller",
-    totalRating: 4.8,
+    totalRating: 3,
     review: [
       {
         rating: 4.9,
@@ -410,7 +759,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_5, cable_1, cable_2, cable_3],
+    img: [box_5, box_4, box_1, box_2],
     productName: "Electricity Box",
     qty:3,
     description:
@@ -420,7 +769,7 @@ const products = [
     tagOff: "New",
     category: "Box",
     trendingCat: "Best Seller",
-    totalRating: 4.8,
+    totalRating: 3.7,
     review: [
       {
         rating: 4.9,
@@ -462,7 +811,7 @@ const products = [
     tagOff: "",
     category: "Conductors",
     trendingCat: "Featured Product",
-    totalRating: 4.7,
+    totalRating: 2,
     review: [
       {
         rating: 5.0,
@@ -544,7 +893,7 @@ const products = [
     tagOff: "",
     category: "air break switch",
     trendingCat: "new product",
-    totalRating: 4.5,
+    totalRating: 4,
     review: [
       {
         rating: 4.7,
@@ -584,7 +933,7 @@ const products = [
     tagOff: "",
     category: "air break switch",
     trendingCat: "new product",
-    totalRating: 4.5,
+    totalRating: 2,
     review: [
       {
         rating: 4.7,
@@ -624,7 +973,7 @@ const products = [
     tagOff: "",
     category: "air break switch",
     trendingCat: "new product",
-    totalRating: 4.5,
+    totalRating: 2.3,
     review: [
       {
         rating: 4.7,
@@ -686,12 +1035,12 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_1, cable_1, cable_2, cable_3],
-    productName: "It  box",
+    img: [earthingSwitch_1, earthingSwitch_2, earthingSwitch_3, earthingSwitch_4],
+    productName: "earthingSwitch_1",
     qty:7,
     description:
       "Extra flexible wire, designed for creative and technical work.",
-    price: 1366,
+    price: 1066,
     deletePrice: 1200,
     tagOff: "",
     category: "earthing switch",
@@ -726,12 +1075,12 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_5, cable_1, cable_2, cable_3],
-    productName: "Fan wire",
+    img: [earthingSwitch_2, earthingSwitch_3, earthingSwitch_4, earthingSwitch_5],
+    productName: "earthingSwitch_2",
     qty:4,
     description:
       "Extra flexible wire, designed for creative and technical work.",
-    price: 166,
+    price: 1667,
     deletePrice: 1200,
     tagOff: "",
     category: "earthing switch",
@@ -766,17 +1115,17 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_19, cable_1, cable_2, cable_3],
-    productName: "Blue wire",
+    img: [earthingSwitch_3, earthingSwitch_4, earthingSwitch_5, earthingSwitch_1],
+    productName: "earthingSwitch_3",
     qty:2,
     description:
       "Extra flexible wire, designed for creative and technical work.",
     price: 266,
     deletePrice: 1200,
-    tagOff: "",
+    tagOff: "30% Off",
     category: "earthing switch",
     trendingCat: "Best Seller",
-    totalRating: 2.5,
+    totalRating: 3.5,
     review: [
       {
         rating: 4.7,
@@ -806,8 +1155,89 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_11, cable_1, cable_2, cable_3],
-    productName: "sortcircuit wire",
+    img: [earthingSwitch_4, earthingSwitch_2, earthingSwitch_5, earthingSwitch_1],
+    productName: "earthingSwitch_4",
+    qty:2,
+    description:
+      "Extra flexible wire, designed for creative and technical work.",
+    price: 866,
+    deletePrice: 1200,
+    tagOff: "30% Off",
+    category: "earthing switch",
+    trendingCat: "Best Seller",
+    totalRating: 3.5,
+    review: [
+      {
+        rating: 2.7,
+        userImg: user,
+        userName: "Ethan Green",
+        profession: "Web Developer",
+        comment: "Highly flexible and strong! Great for my work.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Isabella Thomas",
+        profession: "Artist",
+        comment: "The wire is flexible but still strong enough for daily use.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Aiden Martinez",
+        profession: "Photographer",
+        comment: "Perfect for all my photography setups! Highly recommend.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [earthingSwitch_5, earthingSwitch_4, earthingSwitch_2, earthingSwitch_1],
+    productName: "earthingSwitch_5",
+    qty:2,
+    description:
+      "Extra flexible wire, designed for creative and technical work.",
+    price: 999,
+    deletePrice: 1200,
+    tagOff: "New",
+    category: "earthing switch",
+    trendingCat: "Best Seller",
+    totalRating: 3.7,
+    review: [
+      {
+        rating: 4.7,
+        userImg: user,
+        userName: "Ethan Green",
+        profession: "Web Developer",
+        comment: "Highly flexible and strong! Great for my work.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Isabella Thomas",
+        profession: "Artist",
+        comment: "The wire is flexible but still strong enough for daily use.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Aiden Martinez",
+        profession: "Photographer",
+        comment: "Perfect for all my photography setups! Highly recommend.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+
+  {
+    id: uuidv4(),
+    img: [hornup_fuse_1, hornup_fuse_2, hornup_fuse_3, hornup_fuse_4],
+    productName: "hornup_fuse_1",
     qty:2,
     description:
       "Extra flexible wire, designed for creative and technical work.",
@@ -816,10 +1246,10 @@ const products = [
     tagOff: "",
     category: "horn up fuse",
     trendingCat: "new product",
-    totalRating: 4.5,
+    totalRating: 4,
     review: [
       {
-        rating: 4.7,
+        rating: 3.7,
         userImg: user,
         userName: "Ethan Green",
         profession: "Web Developer",
@@ -846,12 +1276,12 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_12, cable_1, cable_2, cable_3],
-    productName: "High wolt wire",
+    img: [hornup_fuse_2, hornup_fuse_3, hornup_fuse_4, hornup_fuse_5],
+    productName: "hornup_fuse_2",
     qty:5,
     description:
       "Extra flexible wire, designed for creative and technical work.",
-    price: 400,
+    price: 470,
     deletePrice: 1200,
     tagOff: "",
     category: "horn up fuse",
@@ -886,20 +1316,100 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_13, cable_1, cable_2, cable_3],
-    productName: "Multi thred wire",
+    img: [hornup_fuse_3, hornup_fuse_4, hornup_fuse_5, hornup_fuse_1],
+    productName: "hornup_fuse_3",
     qty:8,
     description:
       "Extra flexible wire, designed for creative and technical work.",
-    price: 266,
+    price: 600,
     deletePrice: 1200,
     tagOff: "",
     category: "horn up fuse",
     trendingCat: "new product",
-    totalRating: 4.5,
+    totalRating: 2.5,
     review: [
       {
-        rating: 4.7,
+        rating: 1.7,
+        userImg: user,
+        userName: "Ethan Green",
+        profession: "Web Developer",
+        comment: "Highly flexible and strong! Great for my work.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Isabella Thomas",
+        profession: "Artist",
+        comment: "The wire is flexible but still strong enough for daily use.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Aiden Martinez",
+        profession: "Photographer",
+        comment: "Perfect for all my photography setups! Highly recommend.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [hornup_fuse_4, hornup_fuse_1, hornup_fuse_5, hornup_fuse_2],
+    productName: "hornup_fuse_4",
+    qty:8,
+    description:
+      "Extra flexible wire, designed for creative and technical work.",
+    price: 866,
+    deletePrice: 1200,
+    tagOff: "",
+    category: "horn up fuse",
+    trendingCat: "new product",
+    totalRating: 3.5,
+    review: [
+      {
+        rating: 1.7,
+        userImg: user,
+        userName: "Ethan Green",
+        profession: "Web Developer",
+        comment: "Highly flexible and strong! Great for my work.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Isabella Thomas",
+        profession: "Artist",
+        comment: "The wire is flexible but still strong enough for daily use.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Aiden Martinez",
+        profession: "Photographer",
+        comment: "Perfect for all my photography setups! Highly recommend.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [hornup_fuse_5, hornup_fuse_4, hornup_fuse_2, hornup_fuse_1],
+    productName: "hornup_fuse_5",
+    qty:8,
+    description:
+      "Extra flexible wire, designed for creative and technical work.",
+    price: 1266,
+    deletePrice: 1200,
+    tagOff: "",
+    category: "horn up fuse",
+    trendingCat: "new product",
+    totalRating: 3.8,
+    review: [
+      {
+        rating: 1.7,
         userImg: user,
         userName: "Ethan Green",
         profession: "Web Developer",
@@ -927,17 +1437,17 @@ const products = [
   
   {
     id: uuidv4(),
-    img: [box_4, cable_1, cable_2, cable_3],
+    img: [dropout_1, dropout_2, dropout_3, dropout_4],
     productName: "Drop out switch",
     qty:2,
     description:
       "Extra flexible wire, designed for creative and technical work.",
-    price: 366,
+    price: 466,
     deletePrice: 1200,
-    tagOff: "",
+    tagOff: "New",
     category: "drop out switch",
     trendingCat: "Featured Product",
-    totalRating: 4,
+    totalRating: 3.4,
     review: [
       {
         rating: 3.5,
@@ -967,14 +1477,14 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_7, cable_1, cable_2, cable_3],
+    img: [dropout_2, dropout_3, dropout_4, dropout_5],
     productName: "Mc box",
     qty:2,
     description:
       "Extra flexible wire, designed for creative and technical work.",
     price: 1366,
     deletePrice: 1200,
-    tagOff: "",
+    tagOff: "30% Off",
     category: "drop out switch",
     trendingCat: "Featured Product",
     totalRating: 4,
@@ -1007,17 +1517,97 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_1, cable_1, cable_2, cable_3],
+    img: [dropout_3, dropout_4, dropout_5, dropout_1],
     productName: "Box",
     qty:10,
     description:
       "Extra flexible wire, designed for creative and technical work.",
     price: 966,
     deletePrice: 1200,
-    tagOff: "",
+    tagOff: "New",
     category: "drop out switch",
     trendingCat: "Featured Product",
     totalRating: 4,
+    review: [
+      {
+        rating: 3.5,
+        userImg: user,
+        userName: "Ethan Green",
+        profession: "Web Developer",
+        comment: "Highly flexible and strong! Great for my work.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Isabella Thomas",
+        profession: "Artist",
+        comment: "The wire is flexible but still strong enough for daily use.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Aiden Martinez",
+        profession: "Photographer",
+        comment: "Perfect for all my photography setups! Highly recommend.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [dropout_4, dropout_3, dropout_5, dropout_1],
+    productName: "dropout_4",
+    qty:5,
+    description:
+      "Extra flexible wire, designed for creative and technical work.",
+    price: 199,
+    deletePrice: 1200,
+    tagOff: "30% Off",
+    category: "drop out switch",
+    trendingCat: "Featured Product",
+    totalRating: 2.5,
+    review: [
+      {
+        rating: 3.5,
+        userImg: user,
+        userName: "Ethan Green",
+        profession: "Web Developer",
+        comment: "Highly flexible and strong! Great for my work.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 4.2,
+        userImg: user,
+        userName: "Isabella Thomas",
+        profession: "Artist",
+        comment: "The wire is flexible but still strong enough for daily use.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+      {
+        rating: 5.0,
+        userImg: user,
+        userName: "Aiden Martinez",
+        profession: "Photographer",
+        comment: "Perfect for all my photography setups! Highly recommend.",
+        img: [reviewImg1, reviewImg2, reviewImg1],
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    img: [dropout_5, dropout_4, dropout_3, dropout_1],
+    productName: "dropout_5",
+    qty:8,
+    description:
+      "Extra flexible wire, designed for creative and technical work.",
+    price: 780,
+    deletePrice: 1200,
+    tagOff: "30% Off",
+    category: "drop out switch",
+    trendingCat: "Featured Product",
+    totalRating: 1,
     review: [
       {
         rating: 3.5,

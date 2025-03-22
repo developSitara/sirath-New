@@ -7,7 +7,7 @@ const SpecialProduct = () => {
   const futureDate = new Date("2025-12-31T23:59:59");
   return (
     <>
-      <div className="px-5 py-2  bg-[#fff] w-full flex items-center justify-center flex-col">
+      <div className="px-5 py-10  bg-[#fff] w-full flex items-center justify-center flex-col">
         <h3 className="text-center  w-full mb-3 font-Poppins font-semibold text-lg">
         Special Trend Products
         </h3>

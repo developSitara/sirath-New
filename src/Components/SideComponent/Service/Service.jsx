@@ -23,7 +23,7 @@ const service = [
 
 const Service = () => {
   return (
-    <div className="mt-10 py-8 bg-[#fff]">
+    <div className="mt-10 py-10 bg-[#fff]">
       <div className="w-full flex flex-col items-center justify-center gap-5">
         {service.map((item, index) => (
           <div key={index} className="flex flex-col items-center justify-center mb-8">

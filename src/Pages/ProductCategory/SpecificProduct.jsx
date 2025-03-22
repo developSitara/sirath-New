@@ -35,7 +35,7 @@ const SpecificProduct = ({ selectedRating, sortBy }) => {
 
   return (
     <>
-      <div className="border-2 flex w-full items-center justify-center flex-wrap gap-5">
+      <div className="w-full grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2  grid-cols-1 gap-10">
         {filteredAndSortedProducts.length > 0 ? (
           filteredAndSortedProducts.map((item) => (
             <Link key={item.id} to={`/product-detail/${item.id}`}>
@@ -52,7 +52,7 @@ const SpecificProduct = ({ selectedRating, sortBy }) => {
             </Link>
           ))
         ) : (
-          <p className="text-center text-gray-600 font-semibold">
+          <p className="w-full m-auto  text-gray-600 font-semibold text-xl">
             No products match the selected criteria.
           </p>
         )}

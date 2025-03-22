@@ -115,7 +115,7 @@ const PopularProduct = ({ handleAddToCart }) => {
         >
           {filterProducts.length > 0 ? (
             filterProducts.map((item) => (
-              <div className="mb-5 xl:mx-10" key={item.id}>
+              <div className="mb-5 px-5" key={item.id}>
                 <Link to={`/product-detail/${item.id}`}>
                   <ProductCard
                     key={item.id}

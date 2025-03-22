@@ -3,7 +3,7 @@ import panel_board from "../../../assets/NewImgs/panel_board_4.png";
 
 const SaleOff = () => {
   return (
-    <div className="relative mt-10 px-5 pt-7 w-full h-[450px] bg-gray-100 flex flex-col justify-center items-center text-center">
+    <div className="relative mt-10 px-5 w-full h-[500px] bg-gray-100 flex flex-col justify-center items-center text-center">
       {/* Text Section */}
       <div className="z-10 ">
         <h6 className="text-lg font-medium uppercase text-gray-500">
@@ -16,7 +16,7 @@ const SaleOff = () => {
       </div>
 
       {/* Image Section */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center mt-4">
         <img src={panel_board} alt="panel_board" className="w-auto object-contain" />
       </div>
     </div>

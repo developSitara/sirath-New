@@ -17,7 +17,7 @@ const latestProduct = [
 
 const LatestProduct = () => {
   return (
-    <div className="mt-10 px-5 py-5 bg-[#fff]">
+    <div className="mt-10 px-5 py-10 bg-[#fff]">
       <h3 className="capitalize text-center  w-full mb-3 font-Poppins font-semibold text-lg">
       latest products
       </h3>

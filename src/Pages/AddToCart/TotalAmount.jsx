@@ -1,18 +1,34 @@
 import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const TotalAmount = () => {
+const TotalAmount = ({ cartItems }) => {
   const [isOpen, setIsOpen] = useState(false);
+  console.log(cartItems);
   return (
     <>
       {/*  Total Section */}
       <div className="w-full flex justify-between mb-4">
         <h5 className="text-xl xl:text-2xl font-semibold">Total</h5>
-        <div className="text-xl xl:text-2xl font-Poppins font-semibold text-right">
-          <h5 className="text-black mb-2">$ 3200</h5>
-          <p className="text-gray-500 font-normal mb-2">$2000</p>
-          <p className="text-gray-500 font-normal">$2500</p>
+        <div className="w-full text-right  text-xl xl:text-2xl font-Poppins font-semibold ">
+          <h5 className="text-black mb-2">
+            {cartItems?.reduce(
+              (total, item) => total + item.price * item.qty,
+              0
+            )}
+          </h5>
         </div>
+      </div>
+
+      <div className=" text-lg xl:text-xl font-Poppins font-semibold ">
+        {cartItems?.map((item, index) => (
+          <p key={index} className="w-full flex items-center justify-between text-gray-500 font-normal mb-2">
+            <span>{item.productName}</span>
+            {/* <span className="ml-2">${item.price}</span>
+            <span className="ml-2">x</span>
+            <span className="ml-2">{item.qty}</span> */}
+            <span className="ml-2">${item?.price * item?.qty}</span>
+          </p>
+        ))}
       </div>
 
       <div className="w-full flex justify-between text-xl xl:text-2xl font-Poppins text-gray-500 font-normal">

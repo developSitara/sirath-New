@@ -32,10 +32,10 @@ const CartProduct = ({ cartItems}) => {
 
         <div className="w-full mt-5 xl:mt-10">
           <div className="w-full grid gap-8 ">
-            {cartItems.map((item) => (
+            {cartItems?.map((item) => (
               <div
                 key={item?.id}
-                className="bg-white flex  md:flex-row items-center p-1 xl:p-4 gap-3 xl:gap-14 "
+                className="bg-white flex  md:flex-row items-center p-1 xl:p-10 gap-3 xl:gap-14 "
               >
                 <img
                   src={item?.img[0]}
@@ -43,7 +43,7 @@ const CartProduct = ({ cartItems}) => {
                   className="w-16 h-16 xl:w-24 xl:h-24 object-contain"
                 />
                 <div className="flex-1">
-                  <h3 className="text-base xl:text-lg font-semibold text-gray-400 text-ellipsis line-clamp-1">
+                  <h3 className="text-base lg:text-xl xl:text-2xl font-semibold text-gray-400 text-ellipsis line-clamp-1">
                     {item?.productName}
                   </h3>
                   <p className="text-xs xl:text-sm text-black whitespace-pre-line text-ellipsis line-clamp-2">

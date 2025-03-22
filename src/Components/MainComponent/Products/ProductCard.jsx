@@ -28,7 +28,7 @@ const ProductCard = ({
   return (
     <div
       key={key}
-      className="cursor-pointer border-2 w-full relative sm:w-[300px] md:w-[250px] lg:w-[250px] xl:w-[250px] h-auto bg-[#fff]"
+      className="cursor-pointer w-full relative  h-auto bg-[#fff] py-5 shadow-md"
     >
       <div onClick={() => navigate(`/product-detail/${id}`)} className="w-full">
         <div className="w-32 h-32 md:w-36 md:h-36 m-auto flex justify-center items-center overflow-hidden">

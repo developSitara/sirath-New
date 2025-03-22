@@ -13,6 +13,7 @@ export default{
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+        Public: ["Public Sans", "sans-serif"],
       },
     },
   },
