@@ -21,7 +21,7 @@ const ProductFilter = ({
         <div className=" w-full">
           <h3 className="text-2xl font-semibold text-gray-700 p-2">Price</h3>
           <div className="w-full border-b-2 border-gray-300"></div>
-          <PriceRangeSlider min={priceRange.min} max={priceRange.max}/>
+          {/* <PriceRangeSlider min={priceRange.min} max={priceRange.max}/> */}
         </div>
 
         {/* rating filter */}
