@@ -13,11 +13,12 @@ import { RiPinterestLine } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import { CiMenuFries } from "react-icons/ci";
+import { BsCart } from "react-icons/bs";
 
 const Navbar = ({ cart }) => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  let cartItems = JSON.parse(localStorage.getItem("product"));
   useEffect(() => {
     const handleScroll = () => setIsSticky(window.scrollY > 30);
     window.addEventListener("scroll", handleScroll);
@@ -51,7 +52,9 @@ const Navbar = ({ cart }) => {
             </p>
           </div>
           <div className="flex lg:flex xl:hidden items-center gap-3">
-            <img src={logo} alt="Logo" className="h-8 w-auto bg-white" />
+            <Link to={"/"}>
+              <img src={logo} alt="Logo" className="h-8 w-auto bg-white" />
+            </Link>
           </div>
         </div>
 
@@ -139,7 +142,7 @@ const Navbar = ({ cart }) => {
           {/* Menu Content */}
           <div
             className="bg-transparent text-white text-center space-y-6 text-2xl font-semibold"
-            onClick={(e) => e.stopPropagation()} // Prevents closing when clicking inside
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button (Top-Right) */}
             <button
@@ -150,7 +153,7 @@ const Navbar = ({ cart }) => {
             </button>
 
             {/* Links */}
-            {["Home", "Shop", "About", "Blog", "Pages", "Brand"].map(
+            {["Home", "Shop", "About", "Blog", "Pages", "Brand","Login"].map(
               (name, index) => (
                 <NavLink
                   key={index}
@@ -162,6 +165,7 @@ const Navbar = ({ cart }) => {
                 </NavLink>
               )
             )}
+         
             <div className="flex items-center gap-2 text-white">
               <FaPhone size={15} />
               <p className="border-l-2 pl-2 text-base font-Poppins font-semibold">

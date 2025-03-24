@@ -7,7 +7,7 @@ const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const dropdownRef = useRef(null);
 
-  const categories = ["All Categories", "Electronics", "Fashion", "Books", "Home & Kitchen"];
+  const categories = ["All Categories", "Box", "Fashion", "Books", "Home & Kitchen"];
 
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 

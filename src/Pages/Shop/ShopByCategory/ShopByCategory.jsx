@@ -23,7 +23,7 @@ const ShopByCategory = () => {
     <div className="lg:mt-5 py-5 lg:py-8 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full">
       <div className=" relative  w-full flex gap-5">
         {/* shop by category product */}
-        <div className="  w-full xl:w-3/4 xl:overflow-y-auto ">
+        <div className=" w-full xl:w-3/4 xl:overflow-y-auto ">
           <CategoryProduct selectedRating={selectedRating} sortBy={sortBy}/>
         </div>
 

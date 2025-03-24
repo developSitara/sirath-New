@@ -2,7 +2,7 @@ import React from "react";
 
 const Enquiry = () => {
   return (
-    <div className="mt-10 px-5 py-20 bg-blue text-white">
+    <div className="mt-10 px-5 py-14 bg-blue text-white">
       <h3 className="capitalize text-center  w-full mb-3 font-Poppins font-semibold text-lg">
         enquiry number
       </h3>

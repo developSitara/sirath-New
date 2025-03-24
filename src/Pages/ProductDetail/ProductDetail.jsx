@@ -59,7 +59,7 @@ const ProductDetail = () => {
       <div className=" lg:mt-5 py-5 lg:py-8 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full">
         <div className="relative w-full grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8 items-start justify-center">
           {/* product slider */}
-          <div className=" xl:sticky  xl:top-20 lg:h-[700px] xl:h-[700px] z-10">
+          <div className=" xl:sticky  xl:top-20 lg:h-[700px] xl:h-[700px] z-10 bg-[#fff]">
             <ProductSlider images={product.img} />
             <div className=" w-full flex items-center justify-center gap-5">
               <button className="w-full rounded-full py-2 lg:py-3 bg-blue hover:bg-blue/90 text-white font-medium text-base font-inter">
@@ -75,7 +75,7 @@ const ProductDetail = () => {
           </div>
 
           {/* product details */}
-          <div className="xl:overflow-y-auto w-full xl:pl-5 space-y-3 h-auto">
+          <div className="xl:overflow-y-auto w-full px-8 py-5 space-y-3 h-auto bg-[#fff]">
             <h3 className="capitalize text-3xl lg:text-4xl xl:text-4xl font-bold font-Poppins">
               {product?.productName}
             </h3>

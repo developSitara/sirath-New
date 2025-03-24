@@ -15,7 +15,7 @@ const addToCart = (singlePro) => {
         resolve("Success");
       }
     } catch (error) {
-      reject(error);
+      reject(error); 
     }
   });
 };
@@ -38,4 +38,30 @@ const removeFromCart = (id) => {
   });
 };
 
-export { addToCart, removeFromCart };
+const decrementQty = (id) => {
+  return new Promise((resolve, reject) => {
+    try {
+      let allData = JSON.parse(localStorage.getItem("product"));
+      const productIndex = allData.findIndex(item => item.id === id);
+      if (productIndex !== -1) {
+        // Ensure quantity doesn't go below 1
+        if (allData[productIndex].qty > 1) {
+          allData[productIndex].qty -= 1;
+          localStorage.setItem("product", JSON.stringify(allData));
+          alert("Quantity decremented");
+          resolve("Success");
+        } else {
+          alert("Quantity can't be less than 1");
+          reject("Quantity can't be less than 1");
+        }
+      } else {
+        alert("Product not found in cart");
+        reject("Product not found");
+      }
+    } catch (error) {
+      reject(error);
+    }
+  });
+};
+
+export { addToCart, removeFromCart ,decrementQty};

@@ -1,15 +1,30 @@
-import React, { useMemo } from "react";
+import React, { useEffect, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import ProductCard from "../../Components/MainComponent/Products/ProductCard";
 import { products } from "../../Data/ProductData";
 
-const SpecificProduct = ({ selectedRating, sortBy }) => {
+const SpecificProduct = ({ selectedRating, sortBy,setPriceRange  }) => {
   const { cat } = useParams();
 
   // Filter products by category
   const getCategoryProduct = useMemo(() => {
     return products.filter((product) => product.category === cat);
   }, [products, cat]);
+
+  // Calculate min and max price dynamically
+  const priceRange = useMemo(() => {
+    const prices = getCategoryProduct.map((product) => product.price);
+    return {
+      min: prices.length > 0 ? Math.min(...prices) : 0,
+      max: prices.length > 0 ? Math.max(...prices) : 1000,
+    };
+  }, [getCategoryProduct]);
+
+  // Pass updated price range to parent component
+  useEffect(() => {
+    setPriceRange(priceRange);
+  }, [priceRange, setPriceRange]);
+
 
   // Apply rating filter & sorting
   const filteredAndSortedProducts = useMemo(() => {
@@ -35,7 +50,7 @@ const SpecificProduct = ({ selectedRating, sortBy }) => {
 
   return (
     <>
-      <div className="w-full grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2  grid-cols-1 gap-10">
+      <div className="w-full px-4 xl:px-0  grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2  grid-cols-1 gap-4">
         {filteredAndSortedProducts.length > 0 ? (
           filteredAndSortedProducts.map((item) => (
             <Link key={item.id} to={`/product-detail/${item.id}`}>

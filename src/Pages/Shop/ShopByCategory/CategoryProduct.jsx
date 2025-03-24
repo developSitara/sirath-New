@@ -36,7 +36,7 @@ const CategoryProduct = ({ selectedRating, sortBy }) => {
 
   return (
     <>
-      <div className="w-full grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2  grid-cols-1 gap-10">
+      <div className="px-5  w-full grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2  grid-cols-1 gap-5">
         {filteredAndSortedProducts.length > 0 ? (
           filteredAndSortedProducts.map((item) => (
             <Link key={item.id} to={`/product-detail/${item.id}`}>

@@ -38,7 +38,6 @@ const CategoryProduct = () => {
     { id: "horn up fuse", label: "horn up fuse" },
     { id: "earthing switch", label: "earthing switch" },
   ];
-  console.log("Active Tab: ", activeTab);
   // filter
   const filterProducts =
     activeTab === "all"
@@ -46,7 +45,6 @@ const CategoryProduct = () => {
       : products.filter((product) => {
           return product.category === activeTab;
         });
-  console.log(filterProducts);
   return (
     <div className="w-full  mt-10  relative">
       {/* Header Section */}

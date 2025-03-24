@@ -111,11 +111,11 @@ const PopularProduct = ({ handleAddToCart }) => {
         <Slider
           ref={sliderRef}
           {...settings}
-          className="w-full flex justify-center items-center gap-10"
+          className="w-full flex justify-center items-center gap-8"
         >
           {filterProducts.length > 0 ? (
             filterProducts.map((item) => (
-              <div className="mb-5 px-5" key={item.id}>
+              <div className="mb-5 px-4" key={item.id}>
                 <Link to={`/product-detail/${item.id}`}>
                   <ProductCard
                     key={item.id}

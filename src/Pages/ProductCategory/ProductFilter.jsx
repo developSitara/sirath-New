@@ -7,7 +7,7 @@ const ProductFilter = ({
   selectedRating,
   sortBy,
   handleCheckboxChange,
-  handleSortByChange,
+  handleSortByChange,priceRange,
 }) => {
   return (
     <>
@@ -18,13 +18,14 @@ const ProductFilter = ({
         <div className="w-full border-b-2 border-gray-300 mb-3"></div>
 
         {/* range section */}
-        <div className="p-2 w-full border-2">
-          <h3 className="text-2xl font-semibold text-gray-700">Price</h3>
-          <PriceRangeSlider />
+        <div className=" w-full">
+          <h3 className="text-2xl font-semibold text-gray-700 p-2">Price</h3>
+          <div className="w-full border-b-2 border-gray-300"></div>
+          <PriceRangeSlider min={priceRange.min} max={priceRange.max}/>
         </div>
 
         {/* rating filter */}
-        <div className="w-full mt-5">
+        <div className="w-full mt-10">
           <h3 className="p-2 text-2xl font-semibold font-Poppins text-grey">
             Rating
           </h3>

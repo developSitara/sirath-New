@@ -43,7 +43,6 @@ const TrendingProducts = () => {
       : products.filter((product) => product.trendingCat === activeTab);
 
  
-  console.log(filteredProducts)
   return (
     <div className=" w-full  relative">
       {/* Header Section */}

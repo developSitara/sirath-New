@@ -7,6 +7,7 @@ import ProductFilter from "./ProductFilter";
 const ProductCategory = () => {
   const [selectedRating, setSelectedRating] = useState(null);
   const [sortBy, setSortBy] = useState("");
+  const [priceRange, setPriceRange] = useState({ min: 0, max: 3000 });
 
   const handleCheckboxChange = (rating) => {
     setSelectedRating(selectedRating === rating ? null : rating);
@@ -25,7 +26,7 @@ const ProductCategory = () => {
         <div className="relative  w-full flex gap-5">
           {/* specific product */}
           <div className="  w-full xl:w-3/4 xl:overflow-y-auto ">
-            <SpecificProduct  selectedRating={selectedRating} sortBy={sortBy}/>
+            <SpecificProduct  selectedRating={selectedRating} sortBy={sortBy}  setPriceRange={setPriceRange}/>
           </div>
 
           {/* filter section */}
@@ -35,6 +36,7 @@ const ProductCategory = () => {
               sortBy={sortBy}
               handleCheckboxChange={handleCheckboxChange}
               handleSortByChange={handleSortByChange}
+              priceRange={priceRange}
             />
           </div>
         </div>

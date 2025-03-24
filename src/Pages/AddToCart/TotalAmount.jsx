@@ -3,7 +3,6 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const TotalAmount = ({ cartItems }) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(cartItems);
   return (
     <>
       {/*  Total Section */}

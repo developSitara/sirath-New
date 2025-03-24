@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import TotalAmount from "./TotalAmount";
 import CartProduct from "./CartProduct";
 
 const AddToCart = () => {
   let cartItems = JSON.parse(localStorage.getItem("product"));
+  const [QTY,setQTY] = useState(1)
+  const handleIncreaseQty = ()=>{
+    
+    setQTY((prevQty) => prevQty + 1)
+  }
+
+  const handleDecreaseQty = () => {
+    setQTY((prevQty) => {
+      if (prevQty > 1) {
+        return prevQty - 1; 
+      }
+      return prevQty; 
+    });
+  };
+  console.log(QTY)
   return (
     <>
       <div className=" lg:mt-5 py-5 lg:py-10 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full">
         <div className="relative w-full flex items-start justify-start gap-5 xl:gap-10 flex-wrap xl:flex-nowrap">
           {/* product to add cart */}
           <div className="xl:overflow-y-auto w-full xl:w-3/4  ">
-            <CartProduct cartItems={cartItems} />
+            <CartProduct cartItems={cartItems}handleIncreaseQty={handleIncreaseQty} handleDecreaseQty={handleDecreaseQty} QTY={QTY}/>
           </div>
 
           {/* total product amount section */}

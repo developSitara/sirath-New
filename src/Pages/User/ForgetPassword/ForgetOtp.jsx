@@ -7,7 +7,8 @@ const ForgetOtp = () => {
   }
   return (
     <>
-      <div className="px-5 max-w-screen-sm xl:max-w-screen-md  mx-auto py-28 xl:py-32">
+     <div className="w-full py-10 px-5">
+      <div className="px-5 max-w-screen-sm xl:max-w-screen-md  mx-auto py-24 bg-[#fff] xl:py-32">
         <div className="w-full  text-center">
           <h3 className="text-blue font-bold text-[28px]  font-Public">
           Forgot Password
@@ -69,6 +70,7 @@ const ForgetOtp = () => {
             <input type="checkbox" /> Remember Me
           </div>
         </form>
+      </div>
       </div>
     </>
   );

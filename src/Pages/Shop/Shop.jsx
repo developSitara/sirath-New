@@ -12,7 +12,7 @@ const Shop = () => {
 
   return (
     <div className=" lg:mt-5 py-5 lg:py-8 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full">
-      <div className="w-full flex flex-col gap-8 xl:gap-14">
+      <div className="px-5  w-full flex flex-col gap-8 xl:gap-14">
         <ShopByProduct heading={"Transformer"} category={"Transformer"}  products={products} />
         <ShopByProduct heading={"Horn Up Switches"} category={"horn up fuse"}  products={products} />
         <ShopByProduct heading={"Wire & cables"} category={"wire & cable"}  products={products} />

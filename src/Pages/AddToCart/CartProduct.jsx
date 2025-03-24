@@ -3,14 +3,14 @@ import { FaMinus, FaTrashAlt } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import { removeFromCart } from "../../api/localStorage";
 import { products } from "../../Data/ProductData";
-const CartProduct = ({ cartItems}) => {
-  console.log(cartItems);
+const CartProduct = ({ cartItems,handleIncreaseQty,handleDecreaseQty,QTY}) => {
   const removeFromCartHandler = async (id) => {
     // let singlePro = products.find((product) => product.id == id);
-    // console.log(singlePro)
     await removeFromCart(id);
-
+    
   };
+  
+  // const banner = Array.isArray(img) ? img[0] : img;
   return (
     <>
       <div className="w-full">
@@ -35,7 +35,7 @@ const CartProduct = ({ cartItems}) => {
             {cartItems?.map((item) => (
               <div
                 key={item?.id}
-                className="bg-white flex  md:flex-row items-center p-1 xl:p-10 gap-3 xl:gap-14 "
+                className="bg-[#fff] flex  md:flex-row items-center p-1 xl:p-10 gap-3 xl:gap-14 "
               >
                 <img
                   src={item?.img[0]}
@@ -54,13 +54,13 @@ const CartProduct = ({ cartItems}) => {
                   </p>
                 </div>
                 <div className="flex items-center gap-2 xl:gap-5">
-                  <button variant="outline" size="icon">
+                  <button onClick={()=>handleDecreaseQty(item.id)} variant="outline" size="icon" >
                     <FaMinus className="w-2 h-2 xl:w-5 xl:h-5 text-black" />
                   </button>
                   <span className="text-base xl:text-lg font-semibold">
-                    {item?.qty}
+                    {QTY}
                   </span>
-                  <button variant="outline" size="icon">
+                  <button onClick={()=>handleIncreaseQty(item.id)} variant="outline" size="icon">
                     <FaPlus className="w-2 h-2 xl:w-5 xl:h-5 text-black" />
                   </button>
                 </div>

@@ -1,6 +1,12 @@
 import React from "react";
 import badge from "../../assets/HeroImg/badge.png";
-const HeroSlider = ({ img, title }) => {
+import { useNavigate } from "react-router-dom";
+const HeroSlider = ({ img, title ,cat}) => {
+ const navigate =  useNavigate()
+  const getCatgeoryName =(name)=>{
+    navigate(`/category/${name}`)
+    console.log(getCatgeoryName)
+  }
   return (
     <div
       className=" bg-blue/20 px-10 flex items-center justify-center w-full bg-no-repeat  bg-bottom xl:bg-right-bottom h-[570px]"
@@ -15,7 +21,10 @@ const HeroSlider = ({ img, title }) => {
         <h4 className="mt-5 text-xl font-medium font-Poppins capitalize">
           Start from $140.05
         </h4>
-        <button className="border-b-2 border-blue mt-10 text-base font-semibold font-Poppins capitalize">
+        <button
+        onClick={()=> getCatgeoryName(cat)} 
+          className="border-b-2 border-blue mt-10 text-base font-semibold font-Poppins capitalize"
+        >
           shop now
         </button>
       </div>

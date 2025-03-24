@@ -12,7 +12,8 @@ const LoginPassword = () => {
 
   return (
     <>
-      <div className="px-5 max-w-screen-sm xl:max-w-screen-md  mx-auto py-28 xl:py-32">
+     <div className="w-full py-10 px-5">
+      <div className="px-5 max-w-screen-sm xl:max-w-screen-md  mx-auto py-24 xl:py-32 bg-[#fff]">
         <div className="w-full  text-center">
           <h3 className="text-blue font-bold text-[28px]  font-Public">
             Login to Sirath
@@ -78,6 +79,7 @@ const LoginPassword = () => {
             <NavLink to={'/forgetpassword'} className="mt-6 text-center text-blue font-Public text-[13px] font-normal">Forget my password!</NavLink>
           </div>
         </form>
+      </div>
       </div>
     </>
   );
