@@ -13,7 +13,7 @@ const ProductAbout = () => {
               Specifications
             </h4>
 
-            <ul className="p-4 w-full text-blue space-y-2 text-base font-Poppins font-medium">
+            <ul className="p-2 xl:p-4 w-full text-blue space-y-2  text-sm xl:text-base font-Poppins font-medium">
               <li className="list-disc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiuconsectetur adipiscing elit, sed do eiuconsectetur adipiscing
@@ -40,7 +40,7 @@ const ProductAbout = () => {
             Product details
             </h4>
 
-            <ul className="p-4 text-blue w-full  space-y-2 text-base font-Poppins font-medium">
+            <ul className="p-2 xl:p-4 w-full text-blue space-y-2  text-sm xl:text-base font-Poppins font-medium">
               <li className="list-disc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiuconsectetur adipiscing elit, sed do eiuconsectetur adipiscing
@@ -67,7 +67,7 @@ const ProductAbout = () => {
             Warranty
             </h4>
 
-            <ul className="p-4 text-blue w-full  space-y-2 text-base font-Poppins font-medium">
+            <ul className="p-2 xl:p-4 w-full text-blue space-y-2  text-sm xl:text-base font-Poppins font-medium">
               <li className="list-disc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiuconsectetur adipiscing elit, sed do eiuconsectetur adipiscing

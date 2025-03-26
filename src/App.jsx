@@ -16,6 +16,7 @@ import LoginPassword from "./Pages/User/Login/LoginPassword";
 import ForgetPassword from "./Pages/User/ForgetPassword/ForgetPassword";
 import ForgetOtp from "./Pages/User/ForgetPassword/ForgetOtp";
 import ForgetNewPassword from "./Pages/User/ForgetPassword/ForgetNewPassword";
+import { Toaster } from "react-hot-toast";
 // const Home = React.lazy(() => import("./Components/Home/Home"));
 // const Navbar = React.lazy(() => import("./Components/Navbar/Navbar"));
 // const Footer = React.lazy(() => import("./Components/Footer/Footer"));
@@ -32,7 +33,10 @@ function App() {
         <Route path="/product-detail/:productId" element={<ProductDetail />} />
         <Route path="/category/:cat" element={<ProductCategory />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/shop-by-category/:shopCategory" element={<ShopByCategory />} />
+        <Route
+          path="/shop-by-category/:shopCategory"
+          element={<ShopByCategory />}
+        />
         <Route path="/cart" element={<AddToCart />} />
 
         <Route path="/signup" element={<SignUp />} />
@@ -40,12 +44,14 @@ function App() {
 
         <Route path="/login" element={<Login />} />
         <Route path="/loginpassword" element={<LoginPassword />} />
-        
+
         <Route path="/forgetpassword" element={<ForgetPassword />} />
         <Route path="/forgetOtp" element={<ForgetOtp />} />
         <Route path="/forgetnewpassword" element={<ForgetNewPassword />} />
       </Routes>
+
       <Footer />
+      <Toaster />
       {/* </Suspense> */}
     </BrowserRouter>
   );

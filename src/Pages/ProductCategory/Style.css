@@ -6,14 +6,12 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
-    border: 1px solid red;
 }
 
 .slider {
     position: relative;
     width: 100%;
-    border: 1px solid red;
-    max-width: 400px;
+    max-width: 900px;
 }
 
 /* Track and range */

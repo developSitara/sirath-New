@@ -42,7 +42,7 @@ const FAQ = () => {
   return (
     <div className=" w-full   flex flex-col xl:items-end xl:justify-end">
       <div className="w-full mt-10 xl:mt-16">
-        <h2 className="text-4xl font-titillium font-bold text-center mb-10">
+        <h2 className="text-2xl xl:text-4xl font-titillium font-bold text-center mb-10">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4  w-full">

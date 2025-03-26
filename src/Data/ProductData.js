@@ -82,7 +82,7 @@ import dropout_5 from "../assets/Products/DropImg/dropout_7.png";
 const products = [
   {
     id: uuidv4(),
-    img: [wire_6, cable_1, cable_2, cable_3],
+    img: [wire_6, wire_6, wire_6, wire_6],
     productName: "High-Quality Wire",
     qty:20,
     description:
@@ -123,7 +123,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_2, wire_2, wire_3, wire_4],
+    img: [wire_2, wire_2, wire_2, wire_2],
     productName: "High Bolt Wire",
     qty:30,
     description:
@@ -164,7 +164,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_3, wire_4, wire_5, wire_2],
+    img: [wire_3, wire_3, wire_3, wire_3],
     productName: "Ac Machine Wire",
     qty:100,
     description:
@@ -205,7 +205,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_4, wire_1, wire_2, wire_2],
+    img: [wire_4, wire_4, wire_4, wire_4],
     productName: "Ac Machine Wire",
     qty:90,
     description:
@@ -246,7 +246,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_5, wire_4, wire_1, wire_2],
+    img: [wire_5, wire_5, wire_5, wire_5],
     productName: "Ac Machine Wire",
     qty:20,
     description:
@@ -287,7 +287,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [blackWire, wire_4, wire_1, wire_2],
+    img: [blackWire, blackWire, blackWire, blackWire],
     productName: "Black wire",
     qty:60,
     description:
@@ -328,7 +328,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_1, transformer_2, transformer_4, transformer_5],
+    img: [transformer_1, transformer_1, transformer_1, transformer_1],
     productName: "Tranformer box1",
     qty:40,
     description:
@@ -368,7 +368,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_2, transformer_1, transformer_3, transformer_4],
+    img: [transformer_2, transformer_2, transformer_2, transformer_2],
     productName: "Transformer box",
     qty:60,
     description:
@@ -408,7 +408,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_3, transformer_2, transformer_1, transformer_4],
+    img: [transformer_3, transformer_3, transformer_3, transformer_3],
     productName: "Transformer box3",
     qty:45,
     description:
@@ -448,7 +448,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_4, transformer_1, transformer_3, transformer_5],
+    img: [transformer_4, transformer_4, transformer_4, transformer_4],
     productName: "Transformer box4",
     qty:35,
     description:
@@ -488,7 +488,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_5, transformer_1, transformer_2, transformer_4],
+    img: [transformer_5, transformer_5, transformer_5, transformer_5],
     productName: "Transformer box5",
     qty:15,
     description:
@@ -528,7 +528,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_6, transformer_1, transformer_2, transformer_4],
+    img: [transformer_6, transformer_6, transformer_6, transformer_6],
     productName: "Transformer box5",
     qty:55,
     description:
@@ -568,7 +568,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_7, transformer_6, transformer_2, transformer_4],
+    img: [transformer_7, transformer_7, transformer_7, transformer_7],
     productName: "Transformer box5",
     qty:77,
     description:
@@ -608,7 +608,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_8, transformer_6, transformer_2, transformer_4],
+    img: [transformer_8, transformer_8, transformer_8, transformer_8],
     productName: "Transformer box5",
     qty:90,
     description:
@@ -648,7 +648,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_9, transformer_6, transformer_2, transformer_4],
+    img: [transformer_9, transformer_9, transformer_9, transformer_9],
     productName: "Transformer box5",
     qty:50,
     description:
@@ -688,7 +688,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_10, transformer_1, transformer_2, transformer_4],
+    img: [transformer_10, transformer_10, transformer_10, transformer_10],
     productName: "Transformer box5",
     qty:76,
     description:
@@ -728,7 +728,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_11, transformer_10, transformer_2, transformer_4],
+    img: [transformer_11, transformer_11, transformer_11, transformer_11],
     productName: "Transformer box11",
     qty:66,
     description:
@@ -768,7 +768,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_12, transformer_10, transformer_2, transformer_4],
+    img: [transformer_12, transformer_12, transformer_12, transformer_12],
     productName: "Transformer box12",
     qty:50,
     description:
@@ -808,7 +808,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_13, transformer_10, transformer_2, transformer_4],
+    img: [transformer_13, transformer_13, transformer_13, transformer_13],
     productName: "Transformer box13",
     qty:54,
     description:
@@ -848,7 +848,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_14, transformer_10, transformer_2, transformer_4],
+    img: [transformer_14, transformer_14, transformer_14, transformer_14],
     productName: "Transformer box14",
     qty:30,
     description:
@@ -888,7 +888,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_15, transformer_10, transformer_2, transformer_4],
+    img: [transformer_15, transformer_15, transformer_15, transformer_15],
     productName: "Transformer box15",
     qty:35,
     description:
@@ -928,7 +928,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_16, transformer_10, transformer_2, transformer_4],
+    img: [transformer_16, transformer_16, transformer_16, transformer_16],
     productName: "Transformer box16",
     qty:26,
     description:
@@ -968,7 +968,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_17, transformer_10, transformer_2, transformer_4],
+    img: [transformer_17, transformer_17, transformer_17, transformer_17],
     productName: "Transformer box17",
     qty:68,
     description:
@@ -1008,7 +1008,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_18, transformer_12, transformer_2, transformer_4],
+    img: [transformer_18, transformer_18, transformer_18, transformer_18],
     productName: "Transformer box12",
     qty:40,
     description:
@@ -1048,7 +1048,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [transformer_19, transformer_10, transformer_2, transformer_4],
+    img: [transformer_19, transformer_19, transformer_19, transformer_19],
     productName: "Transformer box12",
     qty:20,
     description:
@@ -1090,7 +1090,7 @@ const products = [
 
   {
     id: uuidv4(),
-    img: [box_1, box_2, box_3, box_4],
+    img: [box_1, box_1, box_1, box_1],
     productName: "Distribution Wire box",
     qty:22,
     description:
@@ -1130,7 +1130,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_2, box_3, box_4, box_5],
+    img: [box_2, box_2, box_2, box_2],
     productName: "Box Wire",
     qty:34,
     description:
@@ -1170,7 +1170,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_3, box_4, box_5, box_1],
+    img: [box_3, box_3, box_3, box_3],
     productName: "Distribution box 3",
     qty:33,
     description:
@@ -1210,7 +1210,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_4, box_2, box_5, box_1],
+    img: [box_4, box_4, box_4, box_4],
     productName: "Distribution box4",
     qty:55,
     description:
@@ -1250,7 +1250,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_5, box_4, box_3, box_1],
+    img: [box_5, box_5, box_5, box_5],
     productName: "Distribution box5",
     qty:66,
     description:
@@ -1290,7 +1290,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_1, box_1, box_2, box_3],
+    img: [box_1, box_1, box_1, box_1],
     productName: " Box Machine",
     qty:55,
     description:
@@ -1330,14 +1330,14 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_5, box_4, box_1, box_2],
+    img: [box_5, box_5, box_5, box_5],
     productName: "Electricity Box",
     qty:30,
     description:
       "Strong, resilient cable that withstands wear and tear over time.",
     price: 1500,
     deletePrice: 1400,
-    tagOff: "New",
+    tagOff: "",
     category: "Box",
     trendingCat: "Best Seller",
     totalRating: 3.7,
@@ -1370,7 +1370,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [cable_5, cable_1, cable_2, cable_3],
+    img: [cable_5, cable_5, cable_5, cable_5],
     productName: "Heavy Duty Wire",
     qty:50,
     description:
@@ -1378,7 +1378,7 @@ const products = [
     price: 1500,
     deletePrice: 2000,
     tagOff: "",
-    category: "Conductors",
+    category: "wire & cable",
     trendingCat: "Featured Product",
     totalRating: 2,
     review: [
@@ -1411,7 +1411,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_10, cable_1, cable_2, cable_3],
+    img: [wire_10, wire_10, wire_10, wire_10],
     productName: "Heavy Duty Wire",
     qty:20,
     description:
@@ -1419,7 +1419,7 @@ const products = [
     price: 500,
     deletePrice: 2000,
     tagOff: "",
-    category: "Conductors",
+    category: "wire & cable",
     trendingCat: "Featured Product",
     totalRating: 2.7,
     review: [
@@ -1452,7 +1452,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_6, cable_1, cable_2, cable_3],
+    img: [box_6, box_6, box_6, box_6],
     productName: "Electronic wire box",
     qty:40,
     description:
@@ -1492,7 +1492,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_7, cable_1, cable_2, cable_3],
+    img: [box_7, box_7, box_7, box_7],
     productName: "Box",
     qty:44,
     description:
@@ -1532,7 +1532,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [box_8, cable_1, cable_2, cable_3],
+    img: [box_8, box_8, box_8, box_8],
     productName: "Cutcout",
     qty:55,
     description:
@@ -1572,15 +1572,15 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [wire_13, wire_3, wire_2, cable_3],
-    productName: "Schneider Electric",
+    img: [wire_13, wire_13, wire_13, wire_13],
+    productName: "wires",
     qty:60,
     description:
       "Extra flexible wire, designed for creative and technical work.",
     price: 453,
     deletePrice: 1200,
     tagOff: "",
-    category: "Schneider Electric",
+    category: "wire & cable",
     trendingCat: "new product",
     totalRating: 3.5,
     review: [
@@ -1604,7 +1604,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [earthingSwitch_1, earthingSwitch_2, earthingSwitch_3, earthingSwitch_4],
+    img: [earthingSwitch_1, earthingSwitch_1, earthingSwitch_1, earthingSwitch_1],
     productName: "earthingSwitch_1",
     qty:70,
     description:
@@ -1652,7 +1652,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [earthingSwitch_2, earthingSwitch_3, earthingSwitch_4, earthingSwitch_5],
+    img: [earthingSwitch_2, earthingSwitch_2, earthingSwitch_2, earthingSwitch_2],
     productName: "earthingSwitch_2",
     qty:40,
     description:
@@ -1692,7 +1692,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [earthingSwitch_3, earthingSwitch_4, earthingSwitch_5, earthingSwitch_1],
+    img: [earthingSwitch_3, earthingSwitch_3, earthingSwitch_3, earthingSwitch_3],
     productName: "earthingSwitch_3",
     qty:20,
     description:
@@ -1732,7 +1732,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [earthingSwitch_4, earthingSwitch_2, earthingSwitch_5, earthingSwitch_1],
+    img: [earthingSwitch_4, earthingSwitch_4, earthingSwitch_4, earthingSwitch_4],
     productName: "earthingSwitch_4",
     qty:20,
     description:
@@ -1772,7 +1772,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [earthingSwitch_5, earthingSwitch_4, earthingSwitch_2, earthingSwitch_1],
+    img: [earthingSwitch_5, earthingSwitch_5, earthingSwitch_5, earthingSwitch_5],
     productName: "earthingSwitch_5",
     qty:80,
     description:
@@ -1813,7 +1813,7 @@ const products = [
 
   {
     id: uuidv4(),
-    img: [hornup_fuse_1, hornup_fuse_2, hornup_fuse_3, hornup_fuse_4],
+    img: [hornup_fuse_1, hornup_fuse_1, hornup_fuse_1, hornup_fuse_1],
     productName: "hornup_fuse_1",
     qty:20,
     description:
@@ -1853,7 +1853,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [hornup_fuse_2, hornup_fuse_3, hornup_fuse_4, hornup_fuse_5],
+    img: [hornup_fuse_2, hornup_fuse_2, hornup_fuse_2, hornup_fuse_2],
     productName: "hornup_fuse_2",
     qty:50,
     description:
@@ -1886,7 +1886,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [hornup_fuse_3, hornup_fuse_4, hornup_fuse_5, hornup_fuse_1],
+    img: [hornup_fuse_3, hornup_fuse_3, hornup_fuse_3, hornup_fuse_3],
     productName: "hornup_fuse_3",
     qty:80,
     description:
@@ -1926,7 +1926,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [hornup_fuse_4, hornup_fuse_1, hornup_fuse_5, hornup_fuse_2],
+    img: [hornup_fuse_4, hornup_fuse_4, hornup_fuse_4, hornup_fuse_4],
     productName: "hornup_fuse_4",
     qty:80,
     description:
@@ -1966,7 +1966,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [hornup_fuse_5, hornup_fuse_4, hornup_fuse_2, hornup_fuse_1],
+    img: [hornup_fuse_5, hornup_fuse_5, hornup_fuse_5, hornup_fuse_5],
     productName: "hornup_fuse_5",
     qty:60,
     description:
@@ -1992,7 +1992,7 @@ const products = [
   
   {
     id: uuidv4(),
-    img: [dropout_1, dropout_2, dropout_3, dropout_4],
+    img: [dropout_1, dropout_1, dropout_1, dropout_1],
     productName: "Drop out switch",
     qty:45,
     description:
@@ -2025,7 +2025,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [dropout_2, dropout_3, dropout_4, dropout_5],
+    img: [dropout_2, dropout_2, dropout_2, dropout_2],
     productName: "Mc box",
     qty:35,
     description:
@@ -2065,7 +2065,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [dropout_3, dropout_4, dropout_5, dropout_1],
+    img: [dropout_3, dropout_3, dropout_3, dropout_3],
     productName: "Box",
     qty:54,
     description:
@@ -2105,7 +2105,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [dropout_4, dropout_3, dropout_5, dropout_1],
+    img: [dropout_4, dropout_4, dropout_4, dropout_4],
     productName: "dropout_4",
     qty:26,
     description:
@@ -2145,7 +2145,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [dropout_5, dropout_4, dropout_3, dropout_1],
+    img: [dropout_5, dropout_5, dropout_5, dropout_5],
     productName: "dropout_5",
     qty:70,
     description:
@@ -2178,7 +2178,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [cutout, cutout3, cutout2, dropout_1],
+    img: [cutout, cutout, cutout, cutout],
     productName: "Mc Switch ",
     qty:70,
     description:
@@ -2186,7 +2186,7 @@ const products = [
     price: 780,
     deletePrice: 1200,
     tagOff: "30% Off",
-    category: "Scheider Electric",
+    category: "Conductors",
     trendingCat: "Featured Product",
     totalRating: 1,
     review: [
@@ -2211,15 +2211,15 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [cutout2, cutout3, cutout2, dropout_1],
+    img: [cutout2, cutout2, cutout2, cutout2],
     productName: "Mc Switch ",
     qty:70,
     description:
       "Extra flexible wire, designed for creative and technical work.",
     price: 780,
     deletePrice: 1200,
-    tagOff: "New",
-    category: "Scheider Electric",
+    tagOff: "30% Off",
+    category: "Conductors",
     trendingCat: "Featured Product",
     totalRating: 1,
     review: [
@@ -2244,7 +2244,7 @@ const products = [
   },
   {
     id: uuidv4(),
-    img: [cutout3, cutout3, cutout2, dropout_1],
+    img: [cutout3, cutout3, cutout3, cutout3],
     productName: "Mc Switch ",
     qty:70,
     description:
@@ -2252,7 +2252,7 @@ const products = [
     price: 780,
     deletePrice: 1200,
     tagOff: "",
-    category: "Scheider Electric",
+    category: "Conductors",
     trendingCat: "Featured Product",
     totalRating: 1,
     review: [

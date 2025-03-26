@@ -1,24 +1,27 @@
 import React, { useState } from "react";
 import googleIcon from "../../../assets/Google.png";
 import { Link, NavLink, useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 const Login = () => {
   const navigate = useNavigate();
   const [text, setText] = useState("");
 
+
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    setText("");
-    // console.log(`phone number is ${number}`)
-    alert("form submitted..");
+
+   
+
+    toast.success("form submitted..");
     navigate("/loginpassword");
   };
 
   return (
     <>
       <div className="w-full py-10 px-5">
-        <div className="px-5 max-w-screen-sm xl:max-w-screen-md  mx-auto py-24 xl:py-32 bg-[#fff]">
+        <div className="px-5 xl:px-10 max-w-screen-sm xl:max-w-screen-md  mx-auto py-5 xl:py-10 bg-[#fff]">
           <div className="w-full  text-center">
-            <h3 className="text-blue font-bold text-[28px]  font-Public">
+            <h3 className="text-blue font-bold text-2xl lg:text-[28px]  font-Public">
               Login to Sirath
             </h3>
             <p className="text-blue font-normal text-[15px] mt-2  font-Public">
@@ -62,9 +65,7 @@ const Login = () => {
               </button>
             </div>
 
-            <div className="mt-6 text-blue font-Public text-[13px] font-normal gap-2 flex items-center justify-center">
-              <input type="checkbox" /> Remember me
-            </div>
+           
             <small className="mt-6 gap-2 text-blue font-Public text-[13px] font-normal relative flex items-center">
               <span className="flex-grow border-[1px] border-t border-blue"></span>
               Need help? Contact support

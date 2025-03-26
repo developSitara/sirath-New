@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import googleIcon from "../../../assets/Google.png";
+import toast from "react-hot-toast";
 const SignUpOtp = () => {
+  const [isChecked, setIsChecked] = useState(false);
+  const [checkboxError, setCheckboxError] = useState("");
   const formSubmitHandler = (e) => {
     e.preventDefault();
+    if (!isChecked) {
+      setCheckboxError("You must agree to the terms and conditions.");
+      return;
+    }
+
+    setCheckboxError("");
+
+    toast.success("Form submitted successfully!");
+    navigate("/");
   };
   return (
     <>
       <div className="w-full py-10 px-5">
-        <div className="px-5 max-w-screen-sm xl:max-w-screen-md  mx-auto py-24 xl:py-32 bg-[#fff]">
+        <div className="px-5 xl:px-10 max-w-screen-sm xl:max-w-screen-md  mx-auto py-5 xl:py-10 bg-[#fff]">
           <div className="w-full  text-center">
-            <h3 className="text-blue font-bold text-[28px]  font-Public">
+            <h3 className="text-blue font-bold text-2xl lg:text-[28px]  font-Public">
               Create Your Account
             </h3>
             <p className="text-blue font-normal text-[15px] mt-2  font-Public">
@@ -68,8 +80,19 @@ const SignUpOtp = () => {
             </div>
 
             <div className="mt-8 text-blue font-Public text-[13px] font-normal gap-2 flex items-center justify-center">
-              <input type="checkbox" /> I agree to the terms and conditions
+              <input
+                type="checkbox"
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)}
+              />
+              I agree to the terms and conditions
             </div>
+
+            {checkboxError && (
+              <p className="text-red-600 text-center text-[12px]">
+                {checkboxError}
+              </p>
+            )}
           </form>
         </div>
       </div>

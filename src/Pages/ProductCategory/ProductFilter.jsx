@@ -7,105 +7,101 @@ const ProductFilter = ({
   selectedRating,
   sortBy,
   handleCheckboxChange,
-  handleSortByChange,priceRange,
+  handleSortByChange,
+  minPrice,
+  maxPrice,
+  setMinPrice,
+  setMaxPrice,
 }) => {
   return (
     <>
       <div className="w-full bg-[#fff] pb-40">
-        <h3 className="p-2 text-2xl font-semibold font-Poppins text-grey">
-          Filter
-        </h3>
-        <div className="w-full border-b-2 border-gray-300 mb-3"></div>
-
-        {/* range section */}
-        <div className=" w-full">
-          <h3 className="text-2xl font-semibold text-gray-700 p-2">Price</h3>
-          <div className="w-full border-b-2 border-gray-300"></div>
-          {/* <PriceRangeSlider min={priceRange.min} max={priceRange.max}/> */}
-        </div>
-
-        {/* rating filter */}
-        <div className="w-full mt-10">
+        <div className="w-full">
           <h3 className="p-2 text-2xl font-semibold font-Poppins text-grey">
-            Rating
+            Filter
           </h3>
           <div className="w-full border-b-2 border-gray-300 mb-3"></div>
+        </div>
 
-          <div className="p-2 w-full flex flex-col gap-4">
-            <div className="w-full flex items-center gap-4">
-              <input
-                type="checkbox"
-                id="star4"
-                className="text-grey text-xl"
-                checked={selectedRating === 4}
-                onChange={() => handleCheckboxChange(4)}
-              />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                4
-              </small>
-              <FaStar size={15} className="text-grey" />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                & Above
-              </small>
-            </div>
-            <div className="w-full flex items-center gap-4">
-              <input
-                type="checkbox"
-                id="star3"
-                className="text-grey text-xl"
-                checked={selectedRating === 3}
-                onChange={() => handleCheckboxChange(3)}
-              />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                3
-              </small>
-              <FaStar size={15} className="text-grey" />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                & Above
-              </small>
-            </div>
-            <div className="w-full flex items-center gap-4">
-              <input
-                type="checkbox"
-                id="star2"
-                className="text-grey text-xl"
-                checked={selectedRating === 2}
-                onChange={() => handleCheckboxChange(2)}
-              />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                2
-              </small>
-              <FaStar size={15} className="text-grey" />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                & Above
-              </small>
-            </div>
-            <div className="w-full flex items-center gap-4">
-              <input
-                type="checkbox"
-                id="star1"
-                className="text-grey text-xl"
-                checked={selectedRating === 1}
-                onChange={() => handleCheckboxChange(1)}
-              />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                1
-              </small>
-              <FaStar size={15} className="text-grey" />
-              <small className="text-xl font-semibold font-Poppins text-grey">
-                & Above
-              </small>
+        {/* Price Range Section */}
+        <div className="w-full">
+          <h3 className="text-2xl font-semibold text-gray-700 p-2">Price</h3>
+          <div className="w-full border-b-2 border-gray-300"></div>
+          <PriceRangeSlider
+            min={0}
+            max={2000}
+            minVal={minPrice}
+            maxVal={maxPrice}
+            setMinVal={setMinPrice}
+            setMaxVal={setMaxPrice}
+          />
+        </div>
+
+        {/* Rating Filter for Mobile Dropdown and Desktop Checkboxes */}
+        <div className="w-full mt-10">
+          <h3 className="p-2 text-2xl font-semibold font-Poppins text-grey">Rating</h3>
+          <div className="w-full border-b-2 border-gray-300 mb-3"></div>
+
+          {/* Mobile Dropdown */}
+          <div className="block lg:hidden">
+            <select
+              value={selectedRating || ""}
+              onChange={(e) => handleCheckboxChange(Number(e.target.value))}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            >
+              <option value="">Select Rating</option>
+              <option value="4">4 & Above</option>
+              <option value="3">3 & Above</option>
+              <option value="2">2 & Above</option>
+              <option value="1">1 & Above</option>
+            </select>
+          </div>
+
+          {/* Desktop Checkboxes */}
+          <div className="hidden lg:block">
+            <div className="p-2 w-full flex flex-col gap-4">
+              {[4, 3, 2, 1].map((rating) => (
+                <div key={rating} className="w-full flex items-center gap-4">
+                  <input
+                    type="checkbox"
+                    id={`star${rating}`}
+                    className="text-grey text-xl"
+                    checked={selectedRating === rating}
+                    onChange={() => handleCheckboxChange(rating)}
+                  />
+                  <small className="text-xl font-semibold font-Poppins text-grey">
+                    {rating}
+                  </small>
+                  <FaStar size={15} className="text-grey" />
+                  <small className="text-xl font-semibold font-Poppins text-grey">
+                    & Above
+                  </small>
+                </div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* sort by filter */}
+        {/* Sort By Filter for Mobile Dropdown and Desktop Buttons */}
         <div className="w-full mt-5">
-          <h3 className="p-2 text-2xl font-semibold font-Poppins text-grey">
-            Sort By
-          </h3>
+          <h3 className="p-2 text-2xl font-semibold font-Poppins text-grey">Sort By</h3>
           <div className="w-full border-b-2 border-gray-300 mb-3"></div>
-          <div className="w-full flex flex-col items-start justify-start text-base font-Poppins font-normal text-gray-700">
+
+          {/* Mobile Dropdown */}
+          <div className="block lg:hidden">
+            <select
+              value={sortBy}
+              onChange={(e) => handleSortByChange(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md"
+            >
+              <option value="lowToHigh">Low to High</option>
+              <option value="highToLow">High to Low</option>
+              <option value="newestFirst">Newest First</option>
+            </select>
+          </div>
+
+          {/* Desktop Buttons */}
+          <div className="hidden lg:block w-full flex flex-col items-start justify-start text-base font-Poppins font-normal text-gray-700">
             {["lowToHigh", "highToLow", "newestFirst"].map((option) => (
               <button
                 key={option}

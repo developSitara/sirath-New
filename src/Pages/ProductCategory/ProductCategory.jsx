@@ -7,7 +7,8 @@ import ProductFilter from "./ProductFilter";
 const ProductCategory = () => {
   const [selectedRating, setSelectedRating] = useState(null);
   const [sortBy, setSortBy] = useState("");
-  const [priceRange, setPriceRange] = useState({ min: 0, max: 3000 });
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(2000);
 
   const handleCheckboxChange = (rating) => {
     setSelectedRating(selectedRating === rating ? null : rating);
@@ -23,10 +24,28 @@ const ProductCategory = () => {
   return (
     <>
       <div className="lg:mt-5 py-5 lg:py-8 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full">
+        <div className="w-full  xl:hidden">
+          {/* for mbile view */}
+          <ProductFilter
+            selectedRating={selectedRating}
+            sortBy={sortBy}
+            handleCheckboxChange={handleCheckboxChange}
+            handleSortByChange={handleSortByChange}
+            minPrice={minPrice}
+            maxPrice={maxPrice}
+            setMinPrice={setMinPrice}
+            setMaxPrice={setMaxPrice}
+          />
+        </div>
         <div className="relative  w-full flex gap-5">
           {/* specific product */}
           <div className="  w-full xl:w-3/4 xl:overflow-y-auto ">
-            <SpecificProduct  selectedRating={selectedRating} sortBy={sortBy}  setPriceRange={setPriceRange}/>
+            <SpecificProduct
+              selectedRating={selectedRating}
+              sortBy={sortBy}
+              minPrice={minPrice}
+              maxPrice={maxPrice}
+            />
           </div>
 
           {/* filter section */}
@@ -36,10 +55,14 @@ const ProductCategory = () => {
               sortBy={sortBy}
               handleCheckboxChange={handleCheckboxChange}
               handleSortByChange={handleSortByChange}
-              priceRange={priceRange}
+              minPrice={minPrice}
+              maxPrice={maxPrice}
+              setMinPrice={setMinPrice}
+              setMaxPrice={setMaxPrice}
             />
           </div>
         </div>
+
         <TopCategory />
         <PopularProduct />
       </div>

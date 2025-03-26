@@ -9,15 +9,15 @@ const ShopByProduct = ({ heading,category, products }) => {
   const getCatgeory =()=>{
     navigate(`/shop-by-category/${category}`)
   }
-  console.log(getCatgeory)
+
   return (
     <>
       <div className="w-full ">
         <div className="w-full flex items-center justify-between">
-          <p className="text-xl lg:text-4xl xl:text-[40px] font-Poppins font-semibold">
+          <p className="text-lg md:text-xl lg:text-4xl xl:text-[40px] font-Poppins font-semibold">
             {heading}
           </p>
-          <p onClick={()=>getCatgeory()} className="cursor-pointer text-xl lg:text-4xl xl:text-[40px] font-Poppins font-semibold text-blue">
+          <p onClick={()=>getCatgeory()} className="cursor-pointer text-lg md:text-xl lg:text-4xl xl:text-[40px] font-Poppins font-semibold text-blue">
             See All
           </p>
         </div>

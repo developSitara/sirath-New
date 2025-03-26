@@ -1,5 +1,5 @@
 import React from "react";
-import badge from "../../assets/HeroImg/badge.png";
+import './Style.css'
 import distribution from "../../assets/HeroImg/panel_board_6.png";
 import consulates from "../../assets/HeroImg/panel_board_4.png";
 import isolators from "../../assets/HeroImg/fuse_1.png";
@@ -9,23 +9,22 @@ import Slider from "react-slick";
 import HeroSlider from "./HeroSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useNavigate } from "react-router-dom";
-import topCategory from "../../Data/TopCategory";
+
 const heroSlider = [
   {
     img: distribution,
-    title: "on-Distribution box sale up to ",
+    title: "on Distribution box sale up to ",
     cat:'Distribution box'
   },
   {
     img: consulates,
     title: "on Consulates sale up to ",
-     cat:'Box'
+     cat:'Distribution box'
   },
   {
     img: isolators,
     title: "on Isolators  sale up to ",
-      cat:'Schneider Electric'
+      cat:'drop out switch'
   },
   {
     img: cable,
@@ -44,13 +43,13 @@ const HeroSection = () => {
     autoplaySpeed: 4000,
     cssEase: "ease-in-out",
     arrows: false, 
-    dots: false,
+    dots: true,
   };
   
   return (
     <div className=" py-12 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full flex items-center lg:gap-8 xl:gap-10">
       {/* Hero Section */}
-      <div  className="w-full lg:w-3/4 ">
+      <div  className="w-full lg:w-3/4 hero-slider">
         <Slider {...settings}>
           {heroSlider &&
             heroSlider.map((item, i) => (

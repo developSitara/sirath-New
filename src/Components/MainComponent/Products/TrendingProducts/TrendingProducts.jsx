@@ -107,7 +107,7 @@ const TrendingProducts = () => {
 
       {/* Products Section */}
 
-      <div className="px-5 w-full m-auto flex justify-center">
+      <div className=" w-full m-auto flex justify-center">
         <Slider
           ref={sliderRef}
           {...settings}
@@ -115,7 +115,7 @@ const TrendingProducts = () => {
         >
           {filteredProducts.length > 0 ? (
             filteredProducts.map((item) => (
-              <div className="mb-6 px-2" key={item.id}>
+              <div className="mb-6 px-4 md:px-2 lg:px-2 xl:px-2" key={item.id}>
                 {/* <Link to={`/product-detail/${item.id}`}> */}
                   <ProductCard
                     key={item.id}

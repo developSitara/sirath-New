@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 
 const ReviewCard = ({ userImg, userName, profession, comment, img ,rating}) => {
   return (
-    <div className="w-full  border-b border-gray-200 pb-4 mb-4 flex flex-col xl:items-end xl:justify-end">
+    <div className="w-full  border-b border-gray-200 pb-4 mb-4 flex flex-col">
       {/* User Info */}
       <div className="flex items-center space-x-3">
         <div className="w-10 h-10 bg-gray-300 rounded-full overflow-hidden">
@@ -62,7 +62,7 @@ const ReviewSection = ({ product }) => {
 //   const currentReviews = reviews.slice(indexOfFirstReview, indexOfLastReview);
 
   return (
-    <div className="w-full  mt-10 flex flex-col xl:items-end xl:justify-end">
+    <div className="w-full mt-10 flex flex-col ">
       {/* Render Current Page Reviews */}
       {product.map((review, index) => (
         <ReviewCard

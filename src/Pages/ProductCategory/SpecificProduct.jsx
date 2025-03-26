@@ -1,30 +1,15 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import ProductCard from "../../Components/MainComponent/Products/ProductCard";
 import { products } from "../../Data/ProductData";
 
-const SpecificProduct = ({ selectedRating, sortBy,setPriceRange  }) => {
+const SpecificProduct = ({ selectedRating, sortBy,minPrice, maxPrice }) => {
   const { cat } = useParams();
-
+console.log(minPrice)
   // Filter products by category
   const getCategoryProduct = useMemo(() => {
     return products.filter((product) => product.category === cat);
-  }, [products, cat]);
-
-  // Calculate min and max price dynamically
-  const priceRange = useMemo(() => {
-    const prices = getCategoryProduct.map((product) => product.price);
-    return {
-      min: prices.length > 0 ? Math.min(...prices) : 0,
-      max: prices.length > 0 ? Math.max(...prices) : 1000,
-    };
-  }, [getCategoryProduct]);
-
-  // Pass updated price range to parent component
-  useEffect(() => {
-    setPriceRange(priceRange);
-  }, [priceRange, setPriceRange]);
-
+  }, [ cat]);
 
   // Apply rating filter & sorting
   const filteredAndSortedProducts = useMemo(() => {
@@ -37,6 +22,11 @@ const SpecificProduct = ({ selectedRating, sortBy,setPriceRange  }) => {
       );
     }
 
+      // Apply Price Filter
+      filteredProducts = filteredProducts.filter(
+        (product) => product.price >= minPrice && product.price <= maxPrice
+      );
+
     if (sortBy === "lowToHigh") {
       filteredProducts.sort((a, b) => a.price - b.price);
     } else if (sortBy === "highToLow") {
@@ -46,7 +36,7 @@ const SpecificProduct = ({ selectedRating, sortBy,setPriceRange  }) => {
     }
 
     return filteredProducts;
-  }, [getCategoryProduct, selectedRating, sortBy]);
+  }, [getCategoryProduct, selectedRating, sortBy, minPrice, maxPrice]);
 
   return (
     <>

@@ -1,0 +1,23 @@
+
+.hero-slider .slick-dots {
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex !important;
+    gap: 8px;
+  }
+  
+  .hero-slider .slick-dots li button {
+    background-color: #434377 !important;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero-slider .slick-dots li.slick-active button {
+    background-color: #434377;
+  }
+  

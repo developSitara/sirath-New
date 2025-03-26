@@ -8,8 +8,8 @@ const HeroSlider = ({ img, title ,cat}) => {
     console.log(getCatgeoryName)
   }
   return (
-    <div
-      className=" bg-blue/20 px-10 flex items-center justify-center w-full bg-no-repeat  bg-bottom xl:bg-right-bottom h-[570px]"
+    <div   onClick={()=> getCatgeoryName(cat)} 
+      className="cursor-pointer bg-blue/20 px-10 flex items-center justify-center w-full bg-no-repeat  bg-bottom md:bg-right-bottom lg:bg-right-bottom xl:bg-right-bottom h-[570px]"
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="w-full">
@@ -22,7 +22,7 @@ const HeroSlider = ({ img, title ,cat}) => {
           Start from $140.05
         </h4>
         <button
-        onClick={()=> getCatgeoryName(cat)} 
+      
           className="border-b-2 border-blue mt-10 text-base font-semibold font-Poppins capitalize"
         >
           shop now

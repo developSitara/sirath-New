@@ -4,6 +4,7 @@ import ReactRating from "react-rating";
 import { addToCart } from "../../../api/localStorage";
 import { products } from "../../../Data/ProductData";
 import { useNavigate } from "react-router-dom";
+import { CiHeart } from "react-icons/ci";
 const ProductCard = ({
   id,
   key,
@@ -28,9 +29,15 @@ const ProductCard = ({
   return (
     <div
       key={key}
-      className="cursor-pointer w-full relative  h-auto bg-[#fff] py-5 shadow-md"
+      className="cursor-pointer w-full relative  h-auto bg-[#fff] py-2 xl:py-5 shadow-md"
     >
-      <div onClick={() => navigate(`/product-detail/${id}`)} className="w-full">
+      <div
+        onClick={() => navigate(`/product-detail/${id}`)}
+        className=" w-full"
+      >
+        <div className="flex w-full items-end justify-end px-4">
+          <CiHeart className="size-5 absolute top-2 right-2"/>
+        </div>
         <div className="w-32 h-32 md:w-36 md:h-36 m-auto flex justify-center items-center overflow-hidden">
           {tagOff === "New" ? (
             <div className="absolute top-2 left-2 bg-red-600 text-white text-xs md:text-sm font-bold px-3 py-1 rounded-br-lg shadow-md">

@@ -7,18 +7,18 @@ import productImg2 from "../../assets/NewImgs/fuse_2.png";
 import productImg4 from "../../assets/NewImgs/wire_2.png";
 
 const ProductSlider = ({ images }) => {
- const singleImg =images[0]
+  const singleImg = images[0];
   const [mainImage, setMainImage] = useState(singleImg);
 
   const settings = {
-    dots: false, 
-    infinite: false, 
-    speed: 500, 
-    slidesToShow: 4, 
-    slidesToScroll: 1, 
-    focusOnSelect: true, 
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    focusOnSelect: true,
     centerMode: true,
-    centerPadding: '0', 
+    centerPadding: "0",
   };
 
   return (
@@ -41,18 +41,17 @@ const ProductSlider = ({ images }) => {
                 src={img}
                 alt={`Thumbnail ${index}`}
                 onClick={() => setMainImage(img)}
-                className={`w-20 h-16 xl:w-24 xl:h-24 object-contain rounded-md transition-all 
-                                    ${
-                                      mainImage === img
-                                        ? "border-2 border-blue"
-                                        : "border border-gray-300"
-                                    }`}
+                className="w-20 h-16 xl:w-24 xl:h-24 object-contain rounded-md transition-all border border-gray-300 "
+                                    // ${
+                                    //   mainImage === img
+                                    //     ? "border-2 border-blue"
+                                    //     : "border border-gray-300"
+                                    // }
+                                    // `}
               />
             </div>
           ))}
         </Slider>
-
-        
       </div>
     </div>
   );

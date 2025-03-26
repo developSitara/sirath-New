@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaStar, FaStarHalf } from "react-icons/fa";
+import { FaMinus, FaPlus, FaStar, FaStarHalf } from "react-icons/fa";
 import ProductSlider from "./ProductSlider";
 import { useNavigate, useParams } from "react-router-dom";
 import ProductReview from "./ProductReview";
@@ -31,7 +31,6 @@ const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
   const navigate = useNavigate();
-
   const addToCartHandler = async (id) => {
     let singlePro = products.find((product) => product.id == id);
     await addToCart(singlePro);
@@ -41,7 +40,6 @@ const ProductDetail = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  
 
   useEffect(() => {
     const foundProduct = products.find((item) => item.id === productId);
@@ -61,7 +59,7 @@ const ProductDetail = () => {
           {/* product slider */}
           <div className=" xl:sticky  xl:top-20 lg:h-[700px] xl:h-[700px] z-10 bg-[#fff]">
             <ProductSlider images={product.img} />
-            <div className=" w-full flex items-center justify-center gap-5">
+            <div className=" pb-5 px-2 w-full flex items-center justify-center gap-5">
               <button className="w-full rounded-full py-2 lg:py-3 bg-blue hover:bg-blue/90 text-white font-medium text-base font-inter">
                 Buy Now
               </button>
@@ -75,7 +73,7 @@ const ProductDetail = () => {
           </div>
 
           {/* product details */}
-          <div className="xl:overflow-y-auto w-full px-8 py-5 space-y-3 h-auto bg-[#fff]">
+          <div className="xl:overflow-y-auto w-full px-4 xl:px-8 py-5 space-y-3 h-auto bg-[#fff]">
             <h3 className="capitalize text-3xl lg:text-4xl xl:text-4xl font-bold font-Poppins">
               {product?.productName}
             </h3>
@@ -100,7 +98,7 @@ const ProductDetail = () => {
             <div className="py-1 flex w-full items-center gap-3 text-orange-600">
               <ReactRating
                 className="flex items-center justify-center gap-5"
-                initialRating={product.totalRating}
+                initialRating={product}
                 readonly
                 emptySymbol={<FaStar size={20} className="text-gray-300" />}
                 fullSymbol={<FaStar size={20} className="text-blue" />}
@@ -131,11 +129,23 @@ const ProductDetail = () => {
             <h6 className="text-blue text-base font-inter font-semibold">
               Minimum quantity{" "}
             </h6>
-            <div className="w-full gap-5 flex flex-col">
+            {/* <div className="w-full gap-5 flex flex-col">
               <button className="w-full rounded-full py-2 lg:py-3 hover:bg-blue/30 bg-blue/20 text-blue font-medium text-base font-inter">
-               {product.qty}
+                {product.qty}
+              </button>
+            </div> */}
+            <div className="flex items-center justify-between xl:gap-5 w-2/5 rounded-full  bg-blue/20 text-blue font-medium text-base font-inter">
+              <button variant="outline" size="icon" className="flex items-center justify-center size-12 text-white rounded-l-full bg-blue ">
+                <FaMinus className="" />
+              </button>
+              <span className="text-base xl:text-lg font-semibold flex items-center justify-center size-12 rounded-l-md rounded-r-md">
+                {product.qty}
+              </span>
+              <button variant="outline" size="icon" className="flex items-center justify-center size-12 text-white rounded-r-full bg-blue ">
+                <FaPlus className="" />
               </button>
             </div>
+
             <div className="space-y-6">
               <hr className="border-gray-300 my-4" />
               {sections.map((section, index) => (

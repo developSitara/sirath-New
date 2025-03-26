@@ -4,7 +4,7 @@ import ReviewSection from "./ReviewSection";
 import FAQ from "./FAQ/FAQ";
 import ReactRating from "react-rating";
 const ProductReview = ({ product }) => {
-    console.log(product)
+  
   const progressData = [
     { step: 5, percentage: 82 },
     { step: 4, percentage: 10 },
@@ -38,8 +38,8 @@ const ProductReview = ({ product }) => {
             </div>
 
             <div className="flex flex-col space-y-1 w-full">
-              {progressData.map((data) => (
-                <div key={data.step} className="flex items-center space-x-2">
+              {progressData.map((data ,i) => (
+                <div key={i} className="flex items-center space-x-2">
                   {/* Step Number */}
                   <span className="text-lg font-semibold text-gray-600">
                     {data.step}

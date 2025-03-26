@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 const SpecialProduct = () => {
   const futureDate = new Date("2025-12-31T23:59:59");
    const navigate = useNavigate();
-   const category = 'Scheider Electric'
+   const category = 'Conductors'
    const getCatgeoryName = (name) => {
      navigate(`/category/${name}`);
    };

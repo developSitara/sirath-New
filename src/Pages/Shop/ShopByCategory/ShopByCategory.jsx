@@ -7,6 +7,8 @@ import CategoryProduct from "./CategoryProduct";
 const ShopByCategory = () => {
   const [selectedRating, setSelectedRating] = useState(null);
   const [sortBy, setSortBy] = useState("");
+    const [minPrice, setMinPrice] = useState(0);
+    const [maxPrice, setMaxPrice] = useState(2000);
 
   const handleCheckboxChange = (rating) => {
     setSelectedRating(selectedRating === rating ? null : rating);
@@ -24,7 +26,8 @@ const ShopByCategory = () => {
       <div className=" relative  w-full flex gap-5">
         {/* shop by category product */}
         <div className=" w-full xl:w-3/4 xl:overflow-y-auto ">
-          <CategoryProduct selectedRating={selectedRating} sortBy={sortBy}/>
+          <CategoryProduct  minPrice={minPrice}
+              maxPrice={maxPrice} selectedRating={selectedRating} sortBy={sortBy}/>
         </div>
 
         {/* filter section */}
@@ -34,6 +37,10 @@ const ShopByCategory = () => {
             sortBy={sortBy}
             handleCheckboxChange={handleCheckboxChange}
             handleSortByChange={handleSortByChange}
+            minPrice={minPrice}
+            maxPrice={maxPrice}
+            setMinPrice={setMinPrice}
+            setMaxPrice={setMaxPrice}
           />
         </div>
       </div>

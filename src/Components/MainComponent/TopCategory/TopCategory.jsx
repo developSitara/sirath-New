@@ -70,9 +70,10 @@ const TopCategory = () => {
       </div>
 
       {/* Slider */}
-      <Slider ref={sliderRef} {...settings} className="">
+      
+      <Slider ref={sliderRef} {...settings} className="w-full ">
         {topcategory.map((item, index) => (
-          <div key={index} className="px-4 mt-5 lg:mt-0  ">
+          <div key={index} className=" px-4 xl:px-2 mt-5 lg:mt-0   w-full ">
             {/* <Link to={`/category/${item.id}`}> */}
               <TopCategoryCard
                 key={item.id}
