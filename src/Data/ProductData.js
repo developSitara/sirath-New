@@ -378,7 +378,7 @@ const products = [
     tagOff: "",
     category: "Transformer",
     trendingCat: "new product",
-    totalRating: 0.1,
+    totalRating: 0.9,
     review: [
       {
         rating: 4.0,
@@ -410,7 +410,7 @@ const products = [
     id: uuidv4(),
     img: [transformer_3, transformer_3, transformer_3, transformer_3],
     productName: "Transformer box3",
-    qty:45,
+    qty:40,
     description:
       "Versatile, long-lasting cable suitable for various applications.",
     price: 1800,

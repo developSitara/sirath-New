@@ -22,7 +22,7 @@ const ProductSlider = ({ images }) => {
   };
 
   return (
-    <div className="max-w-lg mx-auto  p-4">
+    <div className=" max-w-lg mx-auto  p-4">
       {/* Big Main Image */}
       <div className="mb-4">
         <img
@@ -33,7 +33,7 @@ const ProductSlider = ({ images }) => {
       </div>
 
       {/* Thumbnail Images */}
-      <div className="mt-16 w-full h-36">
+      <div className=" mt-8 xl:mt-16 w-full h-auto xl:h-36">
         <Slider {...settings}>
           {images.map((img, index) => (
             <div key={index} className="px-2 cursor-pointer">

@@ -40,7 +40,7 @@ const CartProduct = ({ cartItems,handleIncreaseQty,handleDecreaseQty}) => {
                 className="bg-[#fff] flex  md:flex-row items-center p-1 xl:p-10 gap-3 xl:gap-14 "
               >
                 <img
-                  src={item?.img[0]}
+                  src={Array.isArray(item?.img) ? item?.img[0] : item?.img}
                   alt={"product"}
                   className=" w-16 h-16 xl:w-24 xl:h-24 object-contain"
                 />

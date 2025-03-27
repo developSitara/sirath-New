@@ -17,6 +17,7 @@ import ForgetPassword from "./Pages/User/ForgetPassword/ForgetPassword";
 import ForgetOtp from "./Pages/User/ForgetPassword/ForgetOtp";
 import ForgetNewPassword from "./Pages/User/ForgetPassword/ForgetNewPassword";
 import { Toaster } from "react-hot-toast";
+import AddToFav from "./Pages/AddToFav/AddToFav";
 // const Home = React.lazy(() => import("./Components/Home/Home"));
 // const Navbar = React.lazy(() => import("./Components/Navbar/Navbar"));
 // const Footer = React.lazy(() => import("./Components/Footer/Footer"));
@@ -38,6 +39,7 @@ function App() {
           element={<ShopByCategory />}
         />
         <Route path="/cart" element={<AddToCart />} />
+        <Route path="/wishlist" element={<AddToFav />} />
 
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signupOpt" element={<SignUpOtp />} />

@@ -26,7 +26,7 @@ const SpecialProduct = () => {
         {/* Border */}
         <div className="w-full border-b-[1px] border-gray-300 mb-3"></div>
         <div className="w-full">
-          <div className="w-52 h-52  m-auto flex justify-center items-center overflow-hidden  bg-[#fff]">
+          <div className="w-52 h-52  m-auto flex justify-center items-center overflow-hidden  bg-white">
             <img
               src={panel_board}
               alt={panel_board}

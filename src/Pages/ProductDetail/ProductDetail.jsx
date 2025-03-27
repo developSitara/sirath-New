@@ -30,12 +30,35 @@ const sections = [
 const ProductDetail = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
+  const [displayQty, setDisplayQty] = useState(10); 
   const navigate = useNavigate();
+  
   const addToCartHandler = async (id) => {
     let singlePro = products.find((product) => product.id == id);
-    await addToCart(singlePro);
+    await addToCart(singlePro,displayQty);
     navigate("/cart");
   };
+
+
+
+  useEffect(() => {
+    if (product?.qty && product.qty >= 10) {
+      setDisplayQty(10); 
+    }
+  }, [product]);
+  
+  const increaseQty = () => {
+    if (displayQty + 10 <= product.qty) {
+      setDisplayQty(displayQty + 10);
+    }
+  };
+  
+  const decreaseQty = () => {
+    if (displayQty > 10) {
+      setDisplayQty(displayQty - 10);
+    }
+  };
+  
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -59,7 +82,7 @@ const ProductDetail = () => {
           {/* product slider */}
           <div className=" xl:sticky  xl:top-20 lg:h-[700px] xl:h-[700px] z-10 bg-[#fff]">
             <ProductSlider images={product.img} />
-            <div className=" pb-5 px-2 w-full flex items-center justify-center gap-5">
+            <div className="mt-4 xl:mt-0  pb-5 px-2 w-full flex items-center justify-center gap-5">
               <button className="w-full rounded-full py-2 lg:py-3 bg-blue hover:bg-blue/90 text-white font-medium text-base font-inter">
                 Buy Now
               </button>
@@ -98,7 +121,7 @@ const ProductDetail = () => {
             <div className="py-1 flex w-full items-center gap-3 text-orange-600">
               <ReactRating
                 className="flex items-center justify-center gap-5"
-                initialRating={product}
+                initialRating={product.totalRating}
                 readonly
                 emptySymbol={<FaStar size={20} className="text-gray-300" />}
                 fullSymbol={<FaStar size={20} className="text-blue" />}
@@ -134,16 +157,36 @@ const ProductDetail = () => {
                 {product.qty}
               </button>
             </div> */}
-            <div className="flex items-center justify-between xl:gap-5 w-2/5 rounded-full  bg-blue/20 text-blue font-medium text-base font-inter">
-              <button variant="outline" size="icon" className="flex items-center justify-center size-12 text-white rounded-l-full bg-blue ">
+            <div className="flex items-center justify-between xl:gap-5 w-1/2 xl:w-2/5 rounded-full  bg-blue/20 text-blue font-medium text-base font-inter">
+              <button
+               disabled={displayQty === 10}
+               onClick={decreaseQty}
+                variant="outline"
+                size="icon"
+                className="flex items-center justify-center size-10 xl:size-12 text-white rounded-l-md bg-blue "
+              >
                 <FaMinus className="" />
               </button>
-              <span className="text-base xl:text-lg font-semibold flex items-center justify-center size-12 rounded-l-md rounded-r-md">
-                {product.qty}
+              <span className="text-base xl:text-lg font-semibold flex items-center justify-center size-10 xl:size-12 rounded-l-md rounded-r-md">
+              {displayQty}
               </span>
-              <button variant="outline" size="icon" className="flex items-center justify-center size-12 text-white rounded-r-full bg-blue ">
+              <button
+               disabled={displayQty + 10 > product.qty}
+               onClick={increaseQty}
+                variant="outline"
+                size="icon"
+                className="flex items-center justify-center size-10 xl:size-12 text-white rounded-r-md bg-blue "
+              >
                 <FaPlus className="" />
               </button>
+            </div>
+            <div className="text-xl text-blue font-Public font-semibold">
+              Stock:{" "}
+              {product.qty > 0 ? (
+                product.qty
+              ) : (
+                <span className="text-red-500">Out of stock</span>
+              )}
             </div>
 
             <div className="space-y-6">

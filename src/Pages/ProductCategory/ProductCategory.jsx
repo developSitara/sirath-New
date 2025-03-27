@@ -24,8 +24,8 @@ const ProductCategory = () => {
   return (
     <>
       <div className="lg:mt-5 py-5 lg:py-8 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full">
-        <div className="w-full  xl:hidden">
-          {/* for mbile view */}
+        <div className="w-full border-2 xl:hidden ">
+          {/* filter section for mbile view */}
           <ProductFilter
             selectedRating={selectedRating}
             sortBy={sortBy}
@@ -37,7 +37,7 @@ const ProductCategory = () => {
             setMaxPrice={setMaxPrice}
           />
         </div>
-        <div className="relative  w-full flex gap-5">
+        <div className="relative  w-full flex gap-5 mt-10 xl:mt-0">
           {/* specific product */}
           <div className="  w-full xl:w-3/4 xl:overflow-y-auto ">
             <SpecificProduct
@@ -48,8 +48,8 @@ const ProductCategory = () => {
             />
           </div>
 
-          {/* filter section */}
-          <div className=" w-full hidden lg:block  xl:w-1/4   xl:sticky  xl:top-20 lg:h-[100vh] xl:h-[100vh] z-10">
+          {/* filter section for desktop*/}
+          <div className="  w-full hidden lg:block  xl:w-1/4   xl:sticky  xl:top-20 lg:h-[100vh] xl:h-[100vh] z-10">
             <ProductFilter
               selectedRating={selectedRating}
               sortBy={sortBy}
