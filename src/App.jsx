@@ -18,6 +18,12 @@ import ForgetOtp from "./Pages/User/ForgetPassword/ForgetOtp";
 import ForgetNewPassword from "./Pages/User/ForgetPassword/ForgetNewPassword";
 import { Toaster } from "react-hot-toast";
 import AddToFav from "./Pages/AddToFav/AddToFav";
+import UserProfile from "./Pages/UserProfile/UserProfile";
+import PersonalInfo from "./Pages/UserProfile/PersonalInfo/PersonalInfo";
+import MyWishlist from "./Pages/UserProfile/MyWishlist/MyWishlist";
+import Address from "./Pages/UserProfile/Address/Address";
+import PageNotHere from "./Pages/PageNotFound";
+import AddNewAddress from "./Pages/UserProfile/Address/AddNewAddress";
 // const Home = React.lazy(() => import("./Components/Home/Home"));
 // const Navbar = React.lazy(() => import("./Components/Navbar/Navbar"));
 // const Footer = React.lazy(() => import("./Components/Footer/Footer"));
@@ -50,6 +56,18 @@ function App() {
         <Route path="/forgetpassword" element={<ForgetPassword />} />
         <Route path="/forgetOtp" element={<ForgetOtp />} />
         <Route path="/forgetnewpassword" element={<ForgetNewPassword />} />
+
+        {/* ---------------profile routes define here---------------- */}
+        <Route path="/profile" element={<UserProfile />}>
+          <Route path="personalinfo" element={<PersonalInfo />} />
+          <Route path="wishlist" element={<MyWishlist />} />
+
+          <Route path="address" element={<Address />}>
+            <Route path="add-new-address" element={<AddNewAddress />} />
+          </Route>
+
+          <Route path="pagenothere" element={<PageNotHere />} />
+        </Route>
       </Routes>
 
       <Footer />

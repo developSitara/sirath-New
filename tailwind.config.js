@@ -8,7 +8,8 @@ export default{
        white:'#F8F8F8',
        offWhite:'#F0F0F0',
        skyBlue:'#f0fcff',
-       grey:'#494949'
+       grey:'#494949',
+       darkgrey:'#575966'
      },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],

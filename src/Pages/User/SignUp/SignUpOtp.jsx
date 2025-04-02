@@ -19,7 +19,7 @@ const SignUpOtp = () => {
   return (
     <>
       <div className="w-full py-10 px-5">
-        <div className="px-5 xl:px-10 max-w-screen-sm xl:max-w-screen-md  mx-auto py-5 xl:py-10 bg-[#fff]">
+        <div className="px-5 xl:px-20 max-w-screen-sm xl:max-w-screen-md  mx-auto py-5 xl:py-10 bg-[#fff]">
           <div className="w-full  text-center">
             <h3 className="text-blue font-bold text-2xl lg:text-[28px]  font-Public">
               Create Your Account
