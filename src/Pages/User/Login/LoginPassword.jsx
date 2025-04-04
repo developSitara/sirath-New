@@ -27,7 +27,7 @@ const LoginPassword = () => {
             <h3 className="text-blue font-bold text-2xl lg:text-[28px]  font-Public">
               Login to Sirath
             </h3>
-            <p className="text-blue font-normal text-[15px] mt-2  font-Public">
+            <p className="text-blue font-normal text-xs md:text-sm xl:text-[15px] mt-2  font-Public">
               Access your account and start shopping!
             </p>
           </div>
@@ -40,14 +40,14 @@ const LoginPassword = () => {
                 min={10}
                 type="password"
                 placeholder="Enter Your Password"
-                className="block w-full border-2 bg-gray-400/20 border-white/50 rounded-2xl  py-3 text-[15px]
+                className="block w-full border-2 bg-gray-400/20 border-white/50 rounded-2xl  py-2 xl:py-3  text-[15px]
               text-base text-blue px-4 placeholder:text-blue 
               outline-none focus:border-blue "
               />
             </div>
             <button
               type="submit"
-              className="tracking-wider mt-8 w-full rounded-2xl py-3   bg-blue hover:bg-blue/90 text-white font-medium text-[15px] font-Public"
+              className="tracking-wider mt-8 w-full rounded-2xl py-2 xl:py-3    bg-blue hover:bg-blue/90 text-white font-medium text-[15px] font-Public"
             >
               Sign Up
             </button>
@@ -57,7 +57,7 @@ const LoginPassword = () => {
               <span className="flex-grow border-[1px] border-t border-blue"></span>
             </small>
 
-            <div className="mt-8 relative border-2 border-blue bg-white/20  rounded-2xl py-3 ">
+            <div className="mt-8 relative border-2 border-blue bg-white/20  rounded-2xl py-2 xl:py-3  ">
               <img
                 src={googleIcon}
                 alt="googleIcon"

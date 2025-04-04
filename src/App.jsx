@@ -31,7 +31,7 @@ import AddNewAddress from "./Pages/UserProfile/Address/AddNewAddress";
 function App() {
   return (
     <BrowserRouter>
-      {/* Wrap Navbar, Routes, and Footer with Suspense for lazy loading */}
+     
       {/* <Suspense fallback={<div>Loading...</div>}> */}
       <Navbar />
       <Routes>
@@ -61,11 +61,8 @@ function App() {
         <Route path="/profile" element={<UserProfile />}>
           <Route path="personalinfo" element={<PersonalInfo />} />
           <Route path="wishlist" element={<MyWishlist />} />
-
-          <Route path="address" element={<Address />}>
-            <Route path="add-new-address" element={<AddNewAddress />} />
-          </Route>
-
+          <Route path="address" element={<Address />} />
+          <Route path="address/add-new-address" element={<AddNewAddress />} />
           <Route path="pagenothere" element={<PageNotHere />} />
         </Route>
       </Routes>

@@ -2188,7 +2188,7 @@ const products = [
     tagOff: "30% Off",
     category: "Conductors",
     trendingCat: "Featured Product",
-    totalRating: 1,
+    totalRating: 4,
     review: [
       {
         rating: 3.5,
@@ -2254,7 +2254,7 @@ const products = [
     tagOff: "",
     category: "Conductors",
     trendingCat: "Featured Product",
-    totalRating: 1,
+    totalRating: 3.5,
     review: [
       {
         rating: 3.5,

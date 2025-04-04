@@ -24,7 +24,7 @@ const ProductCategory = () => {
   return (
     <>
       <div className="lg:mt-5 py-5 lg:py-8 px-4 sm:px-6 md:px-6 lg:px-8 xl:px-10 w-full">
-        <div className="w-full border-2 xl:hidden ">
+        <div className="w-full  xl:hidden ">
           {/* filter section for mbile view */}
           <ProductFilter
             selectedRating={selectedRating}

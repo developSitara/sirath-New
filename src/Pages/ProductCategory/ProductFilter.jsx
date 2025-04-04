@@ -15,9 +15,9 @@ const ProductFilter = ({
 }) => {
   return (
     <>
-      <div className="w-full bg-[#fff] pb-40">
+      <div className="w-full bg-[#fff] p-2 xl:pb-40">
         <div className="w-full">
-          <h3 className="p-2 text-xl xl:text-2xl font-semibold font-Poppins text-grey">
+          <h3 className="p-2 text-md xl:text-2xl font-semibold font-Poppins text-grey">
             Filter
           </h3>
           <div className="w-full border-b-2 border-gray-300 mb-3 hidden xl:block"></div>
@@ -25,7 +25,7 @@ const ProductFilter = ({
 
         {/* Price Range Section */}
         <div className="w-full">
-          <h3 className="text-2xl font-semibold text-gray-700 p-2">Price</h3>
+          <h3 className="text-md xl:text-2xl font-semibold text-gray-700 p-2">Price</h3>
           <div className="w-full border-b-2 border-gray-300 hidden xl:block"></div>
           <PriceRangeSlider
             min={0}
@@ -40,7 +40,7 @@ const ProductFilter = ({
         <div className="mt-5 xl:mt-0 w-full flex xl:block items-center justify-between gap-4">
           {/* Rating Filter for Mobile Dropdown and Desktop Checkboxes */}
           <div className="w-full mt-5 xl:mt-10 ">
-            <h3 className="p-2 text-xl xl:text-2xl font-semibold font-Poppins text-grey">
+            <h3 className="p-2 text-md xl:text-2xl font-semibold font-Poppins text-grey">
               Rating
             </h3>
             <div className="w-full border-b-2 border-gray-300 mb-3 hidden xl:block"></div>
@@ -50,9 +50,9 @@ const ProductFilter = ({
               <select
                 value={selectedRating || ""}
                 onChange={(e) => handleCheckboxChange(Number(e.target.value))}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md"
+                className="w-full text-xs px-4 py-2 border border-gray-300 rounded-md"
               >
-                <option value="">Select Rating</option>
+                <option value="" className="text-xs">Select Rating</option>
                 <option value="4">4 & Above</option>
                 <option value="3">3 & Above</option>
                 <option value="2">2 & Above</option>
@@ -87,7 +87,7 @@ const ProductFilter = ({
 
           {/* Sort By Filter for Mobile Dropdown and Desktop Buttons */}
           <div className="w-full mt-5 ">
-            <h3 className="p-2 text-xl xl:text-2xl font-semibold font-Poppins text-grey">
+            <h3 className="p-2 text-md xl:text-2xl font-semibold font-Poppins text-grey">
               Sort By
             </h3>
             <div className="w-full border-b-2 border-gray-300 mb-3 hidden xl:block"></div>
@@ -97,7 +97,7 @@ const ProductFilter = ({
               <select
                 value={sortBy}
                 onChange={(e) => handleSortByChange(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md"
+                className="w-full px-4 py-2 text-xs border border-gray-300 rounded-md"
               >
                 <option value="lowToHigh">Low to High</option>
                 <option value="highToLow">High to Low</option>

@@ -47,7 +47,7 @@ const SignUp = () => {
           <h3 className="text-blue font-bold text-2xl lg:text-[28px] font-Public">
             Create Your Account
           </h3>
-          <p className="text-blue font-normal text-[15px] mt-2 font-Public">
+          <p className="text-blue font-normal text-xs md:text-sm xl:text-[15px] mt-2 font-Public">
             Sign up to start shopping with us!
           </p>
         </div>
@@ -59,14 +59,14 @@ const SignUp = () => {
               onChange={handlePhoneChange}
               type="number"
               placeholder="Enter Your Number"
-              className="block w-full border-2 bg-gray-400/20 border-white/50 rounded-2xl py-3 text-[15px] text-base text-blue px-4 placeholder:text-blue outline-none focus:border-blue"
+              className="block w-full border-2 bg-gray-400/20 border-white/50 rounded-2xl py-2 xl:py-3  text-[15px] text-base text-blue px-4 placeholder:text-blue outline-none focus:border-blue"
             />
             {phoneError && <p className="text-red-600 text-[12px]">{phoneError}</p>}
           </div>
 
           <button
             type="submit"
-            className="tracking-wider mt-8 w-full rounded-2xl py-3 bg-blue hover:bg-blue/90 text-white font-medium text-[15px] font-Public"
+            className="tracking-wider mt-8 w-full rounded-2xl py-2 xl:py-3  bg-blue hover:bg-blue/90 text-white font-medium text-[15px] font-Public"
           >
             Sign Up
           </button>
@@ -77,7 +77,7 @@ const SignUp = () => {
             <span className="flex-grow border-[1px] border-t border-gray-200"></span>
           </small>
 
-          <div className="mt-8 relative border-2 bg-white/20 rounded-2xl py-3">
+          <div className="mt-8 relative border-2 border-blue bg-white/20 rounded-2xl py-2 xl:py-3 ">
             <img src={googleIcon} alt="googleIcon" className="absolute top-3 left-2" />
             <button className="tracking-wider w-full text-gray-400 font-medium text-[15px] font-Public">
               Google

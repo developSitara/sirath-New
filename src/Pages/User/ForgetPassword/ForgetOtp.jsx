@@ -7,11 +7,11 @@ const ForgetOtp = () => {
     const [checkboxError, setCheckboxError] = useState("");
   const formSubmitHandler = (e) => {
     e.preventDefault();
-    if (!isChecked) {
-      setCheckboxError("remember me");
-      return;
-    }
-    setCheckboxError('')
+    // if (!isChecked) {
+    //   setCheckboxError("remember me");
+    //   return;
+    // }
+    // setCheckboxError('')
     navigate("/forgetnewpassword");
   };
   return (
@@ -22,7 +22,7 @@ const ForgetOtp = () => {
             <h3 className="text-blue font-bold text-2xl lg:text-[28px]  font-Public">
               Forgot Password
             </h3>
-            <p className="text-blue font-normal text-[15px] mt-2  font-Public">
+            <p className="text-blue font-normal text-xs md:text-sm xl:text-[15px] mt-2  font-Public">
               Enter your email to reset your password.
             </p>
           </div>
@@ -56,7 +56,7 @@ const ForgetOtp = () => {
             </div>
             <button
               type="submit"
-              className="tracking-wider mt-8 w-full rounded-2xl py-3   bg-blue hover:bg-blue/90 text-white font-medium text-[15px] font-Public"
+              className="tracking-wider mt-8 w-full rounded-2xl py-2 xl:py-3    bg-blue hover:bg-blue/90 text-white font-medium text-[15px] font-Public"
             >
               Submit
             </button>
@@ -66,7 +66,7 @@ const ForgetOtp = () => {
               <span className="flex-grow border-[1px] border-t border-blue"></span>
             </small>
 
-            <div className="mt-8 relative border-2 bg-white/20 border-blue  rounded-2xl py-3 ">
+            <div className="mt-8 relative border-2 bg-white/20 border-blue  rounded-2xl py-2 xl:py-3  ">
               <img
                 src={googleIcon}
                 alt="googleIcon"
@@ -77,7 +77,7 @@ const ForgetOtp = () => {
               </button>
             </div>
 
-            <div className="mt-8 text-blue font-Public text-[13px] font-normal gap-2 flex items-center justify-center">
+            {/* <div className="mt-8 text-blue font-Public text-[13px] font-normal gap-2 flex items-center justify-center">
               <input
                 type="checkbox"
                 checked={isChecked}
@@ -89,7 +89,7 @@ const ForgetOtp = () => {
               <p className="text-red-600 text-center text-[12px]">
                 {checkboxError}
               </p>
-            )}
+            )} */}
           </form>
         </div>
       </div>

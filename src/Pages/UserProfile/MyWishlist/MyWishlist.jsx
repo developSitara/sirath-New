@@ -2,7 +2,7 @@ import React from "react";
 import pic from "../../../assets/NewImgs/wire_1.png";
 import { FaEdit, FaHeart, FaRegHeart } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
-import { CiHeart } from "react-icons/ci";
+
 const MyWishlist = () => {
   const wishlistList = [
     {
@@ -17,72 +17,7 @@ const MyWishlist = () => {
       des: "description ",
       price: "2545.00",
     },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
-    {
-      img: pic,
-      title: "title of product",
-      des: "description ",
-      price: "2545.00",
-    },
+
   ];
   return (
     <>

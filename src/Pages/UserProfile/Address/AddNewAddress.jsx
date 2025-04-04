@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 const AddNewAddress = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     pincode: "",
-    landmark:'',
+    landmark: "",
     locality: "",
     address: "",
     phone: "",
@@ -21,8 +22,20 @@ const AddNewAddress = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
+    console.log("Form Submitted:", formData);
+    toast.success("Form Submitted:", formData);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      pincode: "",
+      landmark: "",
+      locality: "",
+      address: "",
+      phone: "",
+    });
   };
+
+  
   return (
     <div className=" p-6 border rounded-lg shadow-md bg-[#fff]">
       <h3 className="font-semibold text-2xl font-Public text-blue">
@@ -31,6 +44,7 @@ const AddNewAddress = () => {
       <form onSubmit={handleFormSubmit} className="mt-5">
         <div className="grid grid-cols-2 gap-4 mb-4">
           <input
+            name="firstName"
             required
             value={formData.firstName}
             onChange={handleChange}
@@ -39,6 +53,7 @@ const AddNewAddress = () => {
             className="placeholder:text-blue p-4 w-full border-2 outline-none font-Public focus:border-blue rounded-lg text-blue bg-gray-400/20 text-[15px] font-normal"
           />
           <input
+            name="lastName"
             required
             value={formData.lastName}
             onChange={handleChange}
@@ -49,6 +64,7 @@ const AddNewAddress = () => {
         </div>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <input
+            name="pincode"
             required
             value={formData.pincode}
             onChange={handleChange}
@@ -57,6 +73,7 @@ const AddNewAddress = () => {
             className="placeholder:text-blue p-4 w-full border-2 outline-none font-Public focus:border-blue rounded-lg text-blue bg-gray-400/20 text-[15px] font-normal"
           />
           <input
+            name="locality"
             required
             value={formData.locality}
             onChange={handleChange}
@@ -67,6 +84,7 @@ const AddNewAddress = () => {
         </div>
         <div className="mb-4">
           <input
+            name="address"
             required
             type="text"
             value={formData.address}
@@ -77,6 +95,7 @@ const AddNewAddress = () => {
         </div>
         <div className="grid grid-cols-2 gap-4 mb-4">
           <input
+            name="landmark"
             required
             type="text"
             value={formData.landmark}
@@ -85,8 +104,11 @@ const AddNewAddress = () => {
             className="placeholder:text-blue p-4 w-full border-2 outline-none font-Public focus:border-blue rounded-lg text-blue bg-gray-400/20 text-[15px] font-normal"
           />
           <input
+            name="phone"
             required
             type="number"
+            pattern="[0-9]{10}"
+            maxLength="10"
             value={formData.phone}
             onChange={handleChange}
             placeholder="Alternative Number"
